@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-theme="system" data-palette="teal">
+<html lang="zh-CN" data-theme="system" data-palette="indigo">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -1824,7 +1824,7 @@ details.acc[open] summary::after{transform:rotate(135deg)}
   var savedTheme = store.get(THEME_KEY);
   var savedPalette = store.get(PALETTE_KEY);
   applyTheme(savedTheme || 'system');
-  applyPalette(savedPalette || 'teal');
+  applyPalette(savedPalette || 'indigo');
   mqlDark.addEventListener('change', function () {
     if (root.getAttribute('data-theme') === 'system') applyTheme('system');
   });
