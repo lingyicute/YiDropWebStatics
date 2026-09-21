@@ -14,7 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2223%22%20fill%3D%22%23008080%22%2F%3E%3Cg%20fill%3D%22%23ffffff%22%20transform%3D%22translate%2850%2050%29%20scale%280.78%29%20translate%28-50%20-50%29%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2220.6%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%280%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%2845%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%2890%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28135%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28180%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28225%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28270%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28315%2050%2050%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
 <style>
 /* ===== Material You 配色令牌（由 _tools/gen_palette.py 生成）===== */
-/* 种子色 -> HCT/TonalSpot -> 完整 M3 color roles（light / dark） */
+/* 种子色 -> HCT -> 完整 M3 color roles（light / dark）；indigo 用 VIBRANT 方案，其余 TonalSpot */
 
 :root{
   --seed:#008080;
@@ -91,80 +91,81 @@
   --d-shadow:#000000;
 }
 
-:root[data-palette="indigo"]{
+:root[data-palette="indigo"]{ /* 星愿蓝：中等饱和度（chroma 52，介于 TonalSpot 与 VIBRANT 之间） */
   --seed:#1A56DB;
-  --l-primary:#4f5d8b;
-  --l-primary:#4f5d8b;
+  --l-primary:#3a59b2;
   --l-on-primary:#ffffff;
   --l-primary-container:#dbe1ff;
-  --l-on-primary-container:#071844;
-  --l-secondary:#595e72;
+  --l-on-primary-container:#00174c;
+  --l-secondary:#555d7b;
   --l-on-secondary:#ffffff;
-  --l-secondary-container:#dde1f9;
-  --l-on-secondary-container:#161b2c;
-  --l-tertiary:#6c557e;
+  --l-secondary-container:#dbe1ff;
+  --l-on-secondary-container:#121a34;
+  --l-tertiary:#675687;
   --l-on-tertiary:#ffffff;
-  --l-tertiary-container:#f2daff;
-  --l-on-tertiary-container:#261236;
-  --l-error:#a7354a;
+  --l-tertiary-container:#ebdcff;
+  --l-on-tertiary-container:#22123f;
+  --l-error:#ba1a1a;
   --l-on-error:#ffffff;
-  --l-error-container:#ffdadc;
-  --l-on-error-container:#400010;
-  --l-surface:#faf8fe;
-  --l-on-surface:#1b1b20;
-  --l-surface-variant:#e2e1ed;
+  --l-error-container:#ffdad6;
+  --l-on-error-container:#410002;
+  --l-surface:#faf8ff;
+  --l-on-surface:#1a1b21;
+  --l-surface-variant:#e2e1ec;
   --l-on-surface-variant:#45464f;
   --l-outline:#757680;
-  --l-outline-variant:#c5c6d1;
+  --l-outline-variant:#c6c6d0;
   --l-surface-container-lowest:#ffffff;
-  --l-surface-container-low:#f5f3f9;
-  --l-surface-container:#efedf3;
-  --l-surface-container-high:#e9e7ed;
-  --l-surface-container-highest:#e3e2e7;
-  --l-surface-dim:#dbd9df;
-  --l-surface-bright:#faf8fe;
-  --l-inverse-surface:#303035;
-  --l-inverse-on-surface:#f2f0f6;
-  --l-inverse-primary:#b7c5fa;
-  --l-surface-tint:#4f5d8b;
+  --l-surface-container-low:#f4f3fa;
+  --l-surface-container:#eeedf4;
+  --l-surface-container-high:#e9e7ef;
+  --l-surface-container-highest:#e3e2e9;
+  --l-surface-dim:#dad9e0;
+  --l-surface-bright:#faf8ff;
+  --l-inverse-surface:#2f3036;
+  --l-inverse-on-surface:#f1f0f7;
+  --l-inverse-primary:#b5c4ff;
+  --l-surface-tint:#3a59b2;
   --l-scrim:#000000;
   --l-shadow:#000000;
-  --d-primary:#b7c5fa;
-  --d-on-primary:#202e5a;
-  --d-primary-container:#374572;
+  --d-primary:#b5c4ff;
+  --d-on-primary:#00297a;
+  --d-primary-container:#1e4098;
   --d-on-primary-container:#dbe1ff;
-  --d-secondary:#c1c5dd;
-  --d-on-secondary:#2b3042;
-  --d-secondary-container:#414659;
-  --d-on-secondary-container:#dde1f9;
-  --d-tertiary:#d8bceb;
-  --d-on-tertiary:#3c284d;
-  --d-tertiary-container:#543e65;
-  --d-on-tertiary-container:#f2daff;
-  --d-error:#ffb2b9;
-  --d-on-error:#67001f;
-  --d-error-container:#871c34;
-  --d-on-error-container:#ffdadc;
-  --d-surface:#121317;
-  --d-on-surface:#e3e2e7;
+  --d-secondary:#bec5e7;
+  --d-on-secondary:#272f4a;
+  --d-secondary-container:#3e4662;
+  --d-on-secondary-container:#dbe1ff;
+  --d-tertiary:#d2bdf5;
+  --d-on-tertiary:#382856;
+  --d-tertiary-container:#4f3e6e;
+  --d-on-tertiary-container:#ebdcff;
+  --d-error:#ffb4ab;
+  --d-on-error:#690005;
+  --d-error-container:#93000a;
+  --d-on-error-container:#ffdad6;
+  --d-surface:#121318;
+  --d-on-surface:#e3e2e9;
   --d-surface-variant:#45464f;
-  --d-on-surface-variant:#c5c6d1;
+  --d-on-surface-variant:#c6c6d0;
   --d-outline:#8f909a;
   --d-outline-variant:#45464f;
-  --d-surface-container-lowest:#0d0e12;
-  --d-surface-container-low:#1b1b20;
-  --d-surface-container:#1f1f24;
-  --d-surface-container-high:#292a2e;
-  --d-surface-container-highest:#343439;
-  --d-surface-dim:#121317;
-  --d-surface-bright:#38393d;
-  --d-inverse-surface:#e3e2e7;
-  --d-inverse-on-surface:#303035;
-  --d-inverse-primary:#4f5d8b;
-  --d-surface-tint:#b7c5fa;
+  --d-surface-container-lowest:#0d0e13;
+  --d-surface-container-low:#1a1b21;
+  --d-surface-container:#1e1f25;
+  --d-surface-container-high:#292a2f;
+  --d-surface-container-highest:#34343a;
+  --d-surface-dim:#121318;
+  --d-surface-bright:#38393f;
+  --d-inverse-surface:#e3e2e9;
+  --d-inverse-on-surface:#2f3036;
+  --d-inverse-primary:#3a59b2;
+  --d-surface-tint:#b5c4ff;
   --d-scrim:#000000;
   --d-shadow:#000000;
 }
+
+
 
 :root[data-palette="violet"]{
   --seed:#6D4AE0;
