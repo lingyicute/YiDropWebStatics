@@ -1,36 +1,2019 @@
-<!DOCTYPE html><html  lang="en-US" dir="ltr" data-capo=""><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>YiDrop: Share files to nearby devices</title>
-<style>*,::backdrop,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#3b82f680;--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/*! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-feature-settings:normal;font-variation-settings:normal;-moz-tab-size:4;tab-size:4;-webkit-tap-highlight-color:transparent}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-feature-settings:normal;font-size:1em;font-variation-settings:normal}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:initial}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-feature-settings:inherit;font-size:100%;font-variation-settings:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:initial;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:initial}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]:where(:not([hidden=until-found])){display:none}.sr-only{height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;clip:rect(0,0,0,0);border-width:0;white-space:nowrap}.pointer-events-none{pointer-events:none}.absolute{position:absolute}.top-0{top:0}.col-span-12{grid-column:span 12/span 12}.col-span-3{grid-column:span 3/span 3}.m-auto{margin:auto}.mx-2{margin-left:.5rem;margin-right:.5rem}.mb-2{margin-bottom:.5rem}.mb-36{margin-bottom:9rem}.mb-4{margin-bottom:1rem}.me-1{margin-inline-end:.25rem}.me-2{margin-inline-end:.5rem}.ms-2{margin-inline-start:.5rem}.mt-0{margin-top:0}.mt-1{margin-top:.25rem}.mt-2{margin-top:.5rem}.mt-24{margin-top:6rem}.mt-4{margin-top:1rem}.mt-8{margin-top:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.size-5{height:1.25rem;width:1.25rem}.h-52{height:13rem}.h-96{height:24rem}.min-h-screen{min-height:100vh}.w-fit{width:fit-content}.min-w-64{min-width:16rem}.max-w-screen-lg{max-width:1024px}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-12{grid-template-columns:repeat(12,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.flex-nowrap{flex-wrap:nowrap}.items-center{align-items:center}.justify-center{justify-content:center}.gap-2{gap:.5rem}.gap-4{gap:1rem}.gap-8{gap:2rem}.space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(.5rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(.5rem*var(--tw-space-x-reverse))}.overflow-hidden{overflow:hidden}.rounded{border-radius:.25rem}.rounded-lg{border-radius:.5rem}.rounded-xl{border-radius:.75rem}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235/var(--tw-bg-opacity,1))}.bg-blue-950{--tw-bg-opacity:1;background-color:rgb(23 37 84/var(--tw-bg-opacity,1))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity,1))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1))}.bg-gray-300{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity,1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity,1))}.object-contain{object-fit:contain}.p-12{padding:3rem}.p-4{padding:1rem}.px-2{padding-left:.5rem;padding-right:.5rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.pb-10{padding-bottom:2.5rem}.pb-12{padding-bottom:3rem}.pb-4{padding-bottom:1rem}.pl-4{padding-left:1rem}.pr-4{padding-right:1rem}.pt-12{padding-top:3rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-light{font-weight:300}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity,1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.underline{text-decoration-line:underline}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.\[mask-image\:_linear-gradient\(to_right\,transparent_0\,_black_100px\,_black_calc\(100\%-100px\)\,transparent_100\%\)\]{-webkit-mask-image:linear-gradient(90deg,#0000 0,#000 100px,#000 calc(100% - 100px),#0000);mask-image:linear-gradient(90deg,#0000 0,#000 100px,#000 calc(100% - 100px),#0000)}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216/var(--tw-bg-opacity,1))}.hover\:bg-gray-200:hover{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity,1))}.dark\:bg-gray-700:is(.dark *){--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity,1))}.dark\:bg-gray-800:is(.dark *){--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity,1))}.dark\:bg-gray-900:is(.dark *){--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity,1))}.dark\:text-gray-300:is(.dark *){--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity,1))}.dark\:text-gray-400:is(.dark *){--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity,1))}.dark\:text-white:is(.dark *){--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity,1))}.dark\:hover\:bg-blue-800:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(30 64 175/var(--tw-bg-opacity,1))}.dark\:hover\:bg-gray-700:hover:is(.dark *){--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity,1))}@media (min-width:640px){.sm\:col-span-12{grid-column:span 12/span 12}.sm\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.sm\:text-5xl{font-size:3rem;line-height:1}}@media (min-width:768px){.md\:col-span-1{grid-column:span 1/span 1}.md\:col-span-2{grid-column:span 2/span 2}.md\:col-span-4{grid-column:span 4/span 4}.md\:col-span-8{grid-column:span 8/span 8}.md\:h-40{height:10rem}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:justify-start{justify-content:flex-start}.md\:justify-end{justify-content:flex-end}.md\:px-0{padding-left:0;padding-right:0}.md\:pb-0{padding-bottom:0}.md\:pt-0{padding-top:0}.md\:text-start{text-align:start}.md\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width:1024px){.lg\:col-span-5{grid-column:span 5/span 5}.lg\:col-span-7{grid-column:span 7/span 7}.lg\:mt-2{margin-top:.5rem}.lg\:h-40{height:10rem}.lg\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.lg\:gap-12{gap:3rem}.lg\:px-12{padding-left:3rem;padding-right:3rem}.lg\:pl-2{padding-left:.5rem}}@media (min-width:1280px){.xl\:mt-6{margin-top:1.5rem}.xl\:h-48{height:12rem}.xl\:text-2xl{font-size:1.5rem;line-height:2rem}.xl\:text-7xl{font-size:4.5rem;line-height:1}}@media (min-width:1536px){.\32xl\:h-56{height:14rem}.\32xl\:text-3xl{font-size:1.875rem;line-height:2.25rem}.\32xl\:text-8xl{font-size:6rem;line-height:1}}</style>
-<style>.page-enter-active,.page-leave-active{transition:all .2s}.page-enter-from{opacity:0;transform:translate(20px)}.page-leave-to{opacity:0;transform:translate(-20px)}body{overflow-x:hidden}</style>
-<style>@font-face{font-display:block;font-family:Starry;font-style:normal;font-weight:400;src:url(/font/starry.woff2) format("woff2")}body,html{font-family:Starry,sans-serif}</style>
-<style>#logo[data-v-3809a6f1]{animation:rotating-3809a6f1 40s linear infinite}.slogan[data-v-3809a6f1]{animation:fadeIn-3809a6f1 .2s ease-out .3s forwards;opacity:0}.buttons[data-v-3809a6f1]{animation:fadeIn-3809a6f1 .2s ease-out .5s forwards;opacity:0}@keyframes rotating-3809a6f1{0%{rotate:0deg}to{rotate:1turn}}@keyframes fadeIn-3809a6f1{0%{opacity:0;transform:translateY(-20px)}to{opacity:1}}</style>
-<link rel="stylesheet" href="/_nuxt/entry.fm9D5BVR.css" crossorigin>
-<link rel="preload" as="fetch" crossorigin="anonymous" href="/_payload.json?aa3fe343-e854-4b9a-a0e1-51d8d9c364d8">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/7iU6E5Xm.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/D0X_Gh3A.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DVZgQkfD.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/C10QlJ6W.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/CfrowSII.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Dt4uv5Vt.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/Cp5OmZP0.js">
-<link rel="modulepreload" as="script" crossorigin href="/_nuxt/DlAUqK2U.js">
-<link rel="prefetch" as="script" crossorigin href="/_nuxt/CfNJ4R0Q.js">
-<link rel="prefetch" as="script" crossorigin href="/_nuxt/B91cUC4l.js">
-<link rel="prefetch" as="image" type="image/png" href="/_nuxt/logo-512.QxRaHRJG.png">
-<link rel="icon" href="/favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<meta name="description" content="YiDrop is a free, open-source, cross-platform file sharing tool that allows you to share files to nearby devices.">
-<link rel="alternate" href="https://drop.92li.us.kg" hreflang="en">
-<link rel="alternate" href="https://drop.92li.us.kg" hreflang="en-US">
-<link rel="alternate" href="https://drop.92li.us.kg/zh-CN" hreflang="zh">
-<link rel="alternate" href="https://drop.92li.us.kg/zh-CN" hreflang="zh-CN">
-<link rel="alternate" href="https://drop.92li.us.kg" hreflang="x-default">
-<link rel="canonical" href="https://drop.92li.us.kg">
-<meta content="https://drop.92li.us.kg" property="og:url">
-<meta content="en_US" property="og:locale">
-<meta content="zh_CN" property="og:locale:alternate">
-<script type="module" src="/_nuxt/7iU6E5Xm.js" crossorigin></script>
-<style>:where(.i-fa6-brands\:github){display:inline-block;width:0.97em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 496 512' width='496' height='512'%3E%3Cpath fill='black' d='M165.9 397.4c0 2-2.3 3.6-5.2 3.6c-3.3.3-5.6-1.3-5.6-3.6c0-2 2.3-3.6 5.2-3.6c3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9c2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9c.3 2 2.9 3.3 5.9 2.6c2.9-.7 4.9-2.6 4.6-4.6c-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2c12.8 2.3 17.3-5.6 17.3-12.1c0-6.2-.3-40.4-.3-61.4c0 0-70 15-84.7-29.8c0 0-11.4-29.1-27.8-36.6c0 0-22.9-15.7 1.6-15.4c0 0 24.9 2 38.6 25.8c21.9 38.6 58.6 27.5 72.9 20.9c2.3-16 8.8-27.1 16-33.7c-55.9-6.2-112.3-14.3-112.3-110.5c0-27.5 7.6-41.3 23.6-58.9c-2.6-6.5-11.1-33.3 2.6-67.9c20.9-6.5 69 27 69 27c20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27c13.7 34.7 5.2 61.4 2.6 67.9c16 17.7 25.8 31.5 25.8 58.9c0 96.5-58.9 104.2-114.8 110.5c9.2 7.9 17 22.9 17 46.4c0 33.7-.3 75.4-.3 83.6c0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252C496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2c1.6 1.6 3.9 2.3 5.2 1c1.3-1 1-3.3-.7-5.2c-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9c1.6 1 3.6.7 4.3-.7c.7-1.3-.3-2.9-2.3-3.9c-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2c2.3 2.3 5.2 2.6 6.5 1c1.3-1.3.7-4.3-1.3-6.2c-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2c-1.4-2.3-4-3.3-5.6-2'/%3E%3C/svg%3E")}:where(.i-material-symbols\:arrow-downward){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M11 4v12.175l-5.6-5.6L4 12l8 8l8-8l-1.4-1.425l-5.6 5.6V4z'/%3E%3C/svg%3E")}:where(.i-material-symbols\:code){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='m8 18l-6-6l6-6l1.425 1.425l-4.6 4.6L9.4 16.6zm8 0l-1.425-1.425l4.6-4.6L14.6 7.4L16 6l6 6z'/%3E%3C/svg%3E")}:where(.i-material-symbols\:devices){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M2 20v-3h2V6q0-.825.588-1.412T6 4h15v2H6v11h6v3zm13 0q-.425 0-.712-.288T14 19V9q0-.425.288-.712T15 8h6q.425 0 .713.288T22 9v10q0 .425-.288.713T21 20z'/%3E%3C/svg%3E")}:where(.i-material-symbols\:download){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='m12 16l-5-5l1.4-1.45l2.6 2.6V4h2v8.15l2.6-2.6L17 11zm-6 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20z'/%3E%3C/svg%3E")}:where(.i-material-symbols\:gesture){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M13.85 21q-1.35 0-2.275-.925t-.925-2.225q0-1.9 1.538-3.438t3.837-1.912q-.075-.9-.45-1.362t-1.025-.463q-.75 0-1.625.625t-2.075 2.05q-1.95 2.325-2.862 3.025t-1.963.7q-1.275 0-2.15-.95T3 13.825t.588-2.762t1.987-3.388q.475-.65.7-1.1T6.5 5.85q0-.175-.062-.262T6.25 5.5q-.25 0-.625.313t-.875.962L3 5q.8-.975 1.625-1.487T6.25 3q1.15 0 1.95.8t.8 2q0 .725-.375 1.6t-1.25 2.1q-.95 1.35-1.412 2.375t-.463 1.8q0 .425.138.663t.387.237t.438-.137t.687-.663q.325-.35.775-.862t1.1-1.263q1.575-1.875 2.85-2.675t2.675-.8q1.675 0 2.75 1.125t1.225 3.075H21v2.5h-2.475q-.2 2.8-1.462 4.462T13.85 21m.05-2.5q.8 0 1.35-.913T16 15.05q-1.15.275-2 1.088t-.85 1.612q0 .35.2.55t.55.2'/%3E%3C/svg%3E")}:where(.i-material-symbols\:lock){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M6 22q-.825 0-1.412-.587T4 20V10q0-.825.588-1.412T6 8h1V6q0-2.075 1.463-3.537T12 1t3.538 1.463T17 6v2h1q.825 0 1.413.588T20 10v10q0 .825-.587 1.413T18 22zm6-5q.825 0 1.413-.587T14 15t-.587-1.412T12 13t-1.412.588T10 15t.588 1.413T12 17M9 8h6V6q0-1.25-.875-2.125T12 3t-2.125.875T9 6z'/%3E%3C/svg%3E")}:where(.i-material-symbols\:share){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M17 22q-1.25 0-2.125-.875T14 19q0-.15.075-.7L7.05 14.2q-.4.375-.925.588T5 15q-1.25 0-2.125-.875T2 12t.875-2.125T5 9q.6 0 1.125.213t.925.587l7.025-4.1q-.05-.175-.062-.337T14 5q0-1.25.875-2.125T17 2t2.125.875T20 5t-.875 2.125T17 8q-.6 0-1.125-.213T14.95 7.2l-7.025 4.1q.05.175.063.338T8 12t-.012.363t-.063.337l7.025 4.1q.4-.375.925-.587T17 16q1.25 0 2.125.875T20 19t-.875 2.125T17 22'/%3E%3C/svg%3E")}:where(.i-material-symbols\:translate){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='m11.9 22l4.55-12h2.1l4.55 12H21l-1.075-3.05h-4.85L14 22zM4 19l-1.4-1.4l5.05-5.05q-.875-.875-1.588-2T4.75 8h2.1q.5.975 1 1.7t1.2 1.45q.825-.825 1.713-2.313T12.1 6H1V4h7V2h2v2h7v2h-2.9q-.525 1.8-1.575 3.7t-2.075 2.9l2.4 2.45l-.75 2.05l-3.05-3.125zm11.7-1.8h3.6l-1.8-5.1z'/%3E%3C/svg%3E")}:where(.i-material-symbols\:volunteer-activism){display:inline-block;width:1em;height:1em;background-color:currentColor;-webkit-mask-image:var(--svg);mask-image:var(--svg);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:100% 100%;mask-size:100% 100%;--svg:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24'%3E%3Cpath fill='black' d='M7 20.025V11h1.6q.175 0 .35.038t.35.087l6.925 2.575q.35.125.563.45t.212.675q0 .525-.363.85T15.8 16h-2.625q-.125 0-.187-.012t-.163-.063l-1.6-.625l-.325.975l1.925.675q.05.025.15.038t.175.012H20q.8 0 1.4.575T22 19l-7.975 3zM1 22V11h4v11zm15-9l-4.15-4.05q-.775-.75-1.312-1.662T10 5.3q0-1.375.963-2.337T13.3 2q.8 0 1.5.338t1.2.912q.5-.575 1.2-.913T18.7 2q1.375 0 2.338.963T22 5.3q0 1.075-.525 1.988t-1.3 1.662z'/%3E%3C/svg%3E")}</style>
-<link rel="preload" as="fetch" fetchpriority="low" crossorigin="anonymous" href="/_nuxt/builds/meta/aa3fe343-e854-4b9a-a0e1-51d8d9c364d8.json"></head><body  class="dark:bg-gray-900"><div id="__nuxt"><div><!--[--><!--[--><!----><!----><!--[--><!----><!----><!----><!----><!----><!----><!--]--><!--[--><!----><!----><!----><!--]--><!--]--><!--[--><!--[--><div data-v-3809a6f1><div class="flex min-h-screen items-center justify-center pt-12 md:pt-0" data-v-3809a6f1><div style="max-width:1800px;" class="grid grid-cols-12" data-v-3809a6f1><div class="col-span-12 grid grid-cols-12 pb-12 sm:col-span-12 md:col-span-8 md:pb-0 lg:col-span-7" data-v-3809a6f1><div class="col-span-12 mt-0 flex items-center justify-center md:col-span-4 md:justify-end lg:mt-2" data-v-3809a6f1><img id="logo" src="/_nuxt/logo-512.QxRaHRJG.png" alt="YiDrop Logo" class="h-52 object-contain md:h-40 lg:h-40 xl:h-48 2xl:h-56" data-v-3809a6f1></div><div class="col-span-12 flex items-center justify-center md:col-span-8 md:justify-start lg:pl-2" data-v-3809a6f1><div data-v-3809a6f1><h1 class="text-center text-5xl font-black dark:text-white sm:text-5xl md:text-start xl:text-7xl 2xl:text-8xl" data-v-3809a6f1> YiDrop </h1><h2 class="slogan mt-2 px-4 text-center text-xl font-light dark:text-gray-300 md:px-0 md:text-start md:text-xl xl:text-2xl 2xl:text-3xl" data-v-3809a6f1>Share files to nearby devices.</h2><h2 class="slogan px-4 text-center text-xl font-light dark:text-gray-300 md:px-0 md:text-start md:text-xl xl:text-2xl 2xl:text-3xl" data-v-3809a6f1>Free, open-source, cross-platform.</h2><div class="buttons mt-4 flex flex-wrap justify-center gap-4 px-4 md:justify-start md:px-0 xl:mt-6" data-v-3809a6f1><a href="/download" class="" data-v-3809a6f1><div class="inline-block" data-v-3809a6f1><button class="bg-blue-950 flex items-center rounded-lg px-4 py-2 font-bold text-white hover:bg-blue-700 dark:text-gray-300 dark:hover:bg-blue-800"><span class="iconify i-material-symbols:arrow-downward me-2 dark:text-gray-300" aria-hidden="true" style=""></span><!--[-->Download<!--]--></button></div></a></div></div></div></div><div class="col-span-12 grid grid-cols-3 gap-8 px-8 sm:col-span-12 md:col-span-4 lg:col-span-5" data-v-3809a6f1><div class="col-span-3 flex items-center justify-center md:col-span-1" data-v-3809a6f1><img src="/img/yidrop.webp" alt="iPhone Screenshot" class="h-96 object-contain" data-v-3809a6f1></div><div class="col-span-3 flex items-center justify-center md:col-span-2" data-v-3809a6f1><img src="/img/screenshot-pc.webp" alt="PC Screenshot" class="h-96 object-contain" data-v-3809a6f1></div></div></div></div><div class="m-auto mt-4 flex max-w-screen-lg flex-col items-center px-4 lg:px-12" data-v-3809a6f1><h2 class="text-3xl font-bold dark:text-white" data-v-3809a6f1>Features</h2><div class="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:gap-12" data-v-3809a6f1><div class="flex flex-col items-center rounded-xl bg-gray-100 pb-4 pl-4 pr-4 pt-8 dark:bg-gray-800 dark:text-gray-300" data-v-3809a6f1><span class="iconify i-material-symbols:share text-6xl dark:text-gray-300" aria-hidden="true" style=""></span><h3 class="mt-4 text-center text-xl font-bold dark:text-white">Decentralized</h3><p class="mt-2 text-center dark:text-gray-400">Share files without a central server. The file transfer is completely peer-to-peer.</p></div><div class="flex flex-col items-center rounded-xl bg-gray-100 pb-4 pl-4 pr-4 pt-8 dark:bg-gray-800 dark:text-gray-300" data-v-3809a6f1><span class="iconify i-material-symbols:devices text-6xl dark:text-gray-300" aria-hidden="true" style=""></span><h3 class="mt-4 text-center text-xl font-bold dark:text-white">Cross-platform</h3><p class="mt-2 text-center dark:text-gray-400">YiDrop is available for Windows, macOS, Linux, Android, and iOS.</p></div><div class="flex flex-col items-center rounded-xl bg-gray-100 pb-4 pl-4 pr-4 pt-8 dark:bg-gray-800 dark:text-gray-300" data-v-3809a6f1><span class="iconify i-material-symbols:volunteer-activism text-6xl dark:text-gray-300" aria-hidden="true" style=""></span><h3 class="mt-4 text-center text-xl font-bold dark:text-white">Free</h3><p class="mt-2 text-center dark:text-gray-400">YiDrop is free to use. No ads, no tracking, no hidden costs.</p></div><div class="flex flex-col items-center rounded-xl bg-gray-100 pb-4 pl-4 pr-4 pt-8 dark:bg-gray-800 dark:text-gray-300" data-v-3809a6f1><span class="iconify i-material-symbols:code text-6xl dark:text-gray-300" aria-hidden="true" style=""></span><h3 class="mt-4 text-center text-xl font-bold dark:text-white">Open Source</h3><p class="mt-2 text-center dark:text-gray-400">The source code is publicly available. Everyone can contribute to the project.</p></div><div class="flex flex-col items-center rounded-xl bg-gray-100 pb-4 pl-4 pr-4 pt-8 dark:bg-gray-800 dark:text-gray-300" data-v-3809a6f1><span class="iconify i-material-symbols:lock text-6xl dark:text-gray-300" aria-hidden="true" style=""></span><h3 class="mt-4 text-center text-xl font-bold dark:text-white">Secure</h3><p class="mt-2 text-center dark:text-gray-400">End-to-end encryption ensures that only you and the recipient can access your files.</p></div><div class="flex flex-col items-center rounded-xl bg-gray-100 pb-4 pl-4 pr-4 pt-8 dark:bg-gray-800 dark:text-gray-300" data-v-3809a6f1><span class="iconify i-material-symbols:gesture text-6xl dark:text-gray-300" aria-hidden="true" style=""></span><h3 class="mt-4 text-center text-xl font-bold dark:text-white">Easy to Use</h3><p class="mt-2 text-center dark:text-gray-400">A simple user interface without registration. Other devices are discovered automatically.</p></div></div><h2 class="mt-24 text-center text-3xl font-bold dark:text-white" data-v-3809a6f1>Get YiDrop</h2><div class="mb-36 mt-8 flex items-center justify-center gap-4" data-v-3809a6f1><a href="/download" class="" data-v-3809a6f1><div class="inline-block" data-v-3809a6f1><button class="bg-blue-950 flex items-center rounded-lg px-4 py-2 font-bold text-white hover:bg-blue-700 dark:text-gray-300 dark:hover:bg-blue-800"><span class="iconify i-material-symbols:download me-2 dark:text-gray-300" aria-hidden="true" style=""></span><!--[-->Download<!--]--></button></div></a></div></div></div><div class="bg-gray-100 pb-10 pt-8 text-center text-sm dark:bg-gray-800 dark:text-gray-300"><p>© 2025 lingyicute</p><div class="mt-8 flex flex-wrap justify-center"><div class="inline-block"><a href="https://github.com/lingyicute/yidrop" target="_blank" class="flex items-center rounded-lg px-2 py-1 hover:bg-gray-200 dark:text-gray-300 dark:hover:bg-gray-700"><span class="iconify i-fa6-brands:github me-2" aria-hidden="true" style=""></span><!--[-->GitHub<!--]--></a></div></div></div><div class="absolute flex gap-2" style="top:20px;right:20px;"><span></span><!--[--><div class="flex items-center"><span class="iconify i-material-symbols:translate me-1 dark:text-white" aria-hidden="true" style=""></span><select value="" class="rounded-lg text-black dark:text-white bg-white dark:bg-gray-900" style="width:0px;"><!--[--><option value="en">English</option><option value="zh-CN">简体中文</option><!--]--></select></div><div class="absolute top-0 pointer-events-none"><select style="visibility:hidden;"><option>English</option></select></div><!--]--></div><!--]--><!--]--><!--]--></div></div><div id="teleports"></div><script type="application/json" data-nuxt-data="nuxt-app" data-ssr="true" id="__NUXT_DATA__" data-src="/_payload.json?aa3fe343-e854-4b9a-a0e1-51d8d9c364d8">[{"state":1,"once":9,"_errors":10,"serverRendered":12,"path":13,"prerenderedAt":14},["Reactive",2],{"$snuxt-i18n-meta":3,"$ssite-config":4},{},{"currentLocale":5,"defaultLocale":5,"env":6,"name":7,"url":8},"en","production","yidrop-website","https://drop.92li.us.kg",["Set"],["ShallowReactive",11],{},true,"/",1738847934507]</script>
-<script>window.__NUXT__={};window.__NUXT__.config={public:{i18n:{baseUrl:"https://drop.92li.us.kg",defaultLocale:"en",defaultDirection:"ltr",strategy:"prefix_except_default",lazy:false,rootRedirect:"",routesNameSeparator:"___",defaultLocaleRouteNameSuffix:"default",skipSettingLocaleOnNavigate:false,differentDomains:false,trailingSlash:false,locales:[{code:"en",language:"en-US",name:"English",isCatchallLocale:true,files:["/workspaces/YiDropWebsite/i18n/locales/en.json"]},{code:"zh-CN",language:"zh-CN",name:"简体中文",files:["/workspaces/YiDropWebsite/i18n/locales/zh-CN.json"]}],detectBrowserLanguage:{alwaysRedirect:false,cookieCrossOrigin:false,cookieDomain:"",cookieKey:"i18n_redirected",cookieSecure:false,fallbackLocale:"",redirectOn:"root",useCookie:true},experimental:{localeDetector:"",switchLocalePathLinkSSR:false,autoImportTranslationFunctions:false,typedPages:true,typedOptionsAndMessages:false,generatedLocaleFilePathFormat:"absolute"},multiDomainLocales:false}},app:{baseURL:"/",buildId:"aa3fe343-e854-4b9a-a0e1-51d8d9c364d8",buildAssetsDir:"/_nuxt/",cdnURL:""}}</script></body></html>
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="system" data-palette="teal">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>YiDrop — 跨平台局域网文件分享 · 开源、免费、无广告</title>
+<meta name="description" content="YiDrop 是一个开源、免费、跨平台的 AirDrop 替代品：在同一个 Wi-Fi 下快速、安全地互传文件、文件夹、文字与剪贴板内容。无需互联网、无需账号，全程 HTTPS 端到端加密。支持 Android、Windows、Linux 与 macOS。">
+<meta name="theme-color" content="#008080">
+<meta name="color-scheme" content="light dark">
+<meta property="og:type" content="website">
+<meta property="og:title" content="YiDrop — 把文件，丢给身边的设备">
+<meta property="og:description" content="开源、免费、跨平台的局域网文件分享工具。无需互联网、无需账号，全程 HTTPS 加密。">
+<meta property="og:url" content="https://drop.92li.uk">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20100%20100%22%3E%3Crect%20width%3D%22100%22%20height%3D%22100%22%20rx%3D%2223%22%20fill%3D%22%23008080%22%2F%3E%3Cg%20fill%3D%22%23ffffff%22%20transform%3D%22translate%2850%2050%29%20scale%280.78%29%20translate%28-50%20-50%29%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2220.6%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%280%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%2845%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%2890%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28135%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28180%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28225%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28270%2050%2050%29%22%2F%3E%3Crect%20x%3D%2239.2%22%20y%3D%2210.8%22%20width%3D%2221.6%22%20height%3D%229.6%22%20rx%3D%224.8%22%20transform%3D%22rotate%28315%2050%2050%29%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+<style>
+/* ===== Material You 配色令牌（由 _tools/gen_palette.py 生成）===== */
+/* 种子色 -> HCT/TonalSpot -> 完整 M3 color roles（light / dark） */
+
+:root{
+  --seed:#008080;
+  --l-primary:#196969;
+  --l-primary:#196969;
+  --l-on-primary:#ffffff;
+  --l-primary-container:#a8efee;
+  --l-on-primary-container:#002020;
+  --l-secondary:#4a6363;
+  --l-on-secondary:#ffffff;
+  --l-secondary-container:#cce8e7;
+  --l-on-secondary-container:#051f1f;
+  --l-tertiary:#39637c;
+  --l-on-tertiary:#ffffff;
+  --l-tertiary-container:#c5e7ff;
+  --l-on-tertiary-container:#001e2d;
+  --l-error:#a73736;
+  --l-on-error:#ffffff;
+  --l-error-container:#ffdad7;
+  --l-on-error-container:#410004;
+  --l-surface:#f6faf9;
+  --l-on-surface:#181c1c;
+  --l-surface-variant:#d9e5e4;
+  --l-on-surface-variant:#3e4948;
+  --l-outline:#6e7979;
+  --l-outline-variant:#bdc9c8;
+  --l-surface-container-lowest:#ffffff;
+  --l-surface-container-low:#f0f4f4;
+  --l-surface-container:#eaefee;
+  --l-surface-container-high:#e5e9e8;
+  --l-surface-container-highest:#dfe3e3;
+  --l-surface-dim:#d6dbda;
+  --l-surface-bright:#f6faf9;
+  --l-inverse-surface:#2c3131;
+  --l-inverse-on-surface:#edf2f1;
+  --l-inverse-primary:#8cd3d2;
+  --l-surface-tint:#196969;
+  --l-scrim:#000000;
+  --l-shadow:#000000;
+  --d-primary:#8cd3d2;
+  --d-on-primary:#003737;
+  --d-primary-container:#004f4f;
+  --d-on-primary-container:#a8efee;
+  --d-secondary:#b0cccb;
+  --d-on-secondary:#1b3534;
+  --d-secondary-container:#324b4b;
+  --d-on-secondary-container:#cce8e7;
+  --d-tertiary:#a2cce8;
+  --d-on-tertiary:#00344b;
+  --d-tertiary-container:#1e4b63;
+  --d-on-tertiary-container:#c5e7ff;
+  --d-error:#ffb3ae;
+  --d-on-error:#67040d;
+  --d-error-container:#871f21;
+  --d-on-error-container:#ffdad7;
+  --d-surface:#0f1414;
+  --d-on-surface:#dfe3e3;
+  --d-surface-variant:#3e4948;
+  --d-on-surface-variant:#bdc9c8;
+  --d-outline:#889392;
+  --d-outline-variant:#3e4948;
+  --d-surface-container-lowest:#0a0f0f;
+  --d-surface-container-low:#181c1c;
+  --d-surface-container:#1c2120;
+  --d-surface-container-high:#262b2b;
+  --d-surface-container-highest:#313635;
+  --d-surface-dim:#0f1414;
+  --d-surface-bright:#353a3a;
+  --d-inverse-surface:#dfe3e3;
+  --d-inverse-on-surface:#2c3131;
+  --d-inverse-primary:#196969;
+  --d-surface-tint:#8cd3d2;
+  --d-scrim:#000000;
+  --d-shadow:#000000;
+}
+
+:root[data-palette="indigo"]{
+  --seed:#1A56DB;
+  --l-primary:#4f5d8b;
+  --l-primary:#4f5d8b;
+  --l-on-primary:#ffffff;
+  --l-primary-container:#dbe1ff;
+  --l-on-primary-container:#071844;
+  --l-secondary:#595e72;
+  --l-on-secondary:#ffffff;
+  --l-secondary-container:#dde1f9;
+  --l-on-secondary-container:#161b2c;
+  --l-tertiary:#6c557e;
+  --l-on-tertiary:#ffffff;
+  --l-tertiary-container:#f2daff;
+  --l-on-tertiary-container:#261236;
+  --l-error:#a7354a;
+  --l-on-error:#ffffff;
+  --l-error-container:#ffdadc;
+  --l-on-error-container:#400010;
+  --l-surface:#faf8fe;
+  --l-on-surface:#1b1b20;
+  --l-surface-variant:#e2e1ed;
+  --l-on-surface-variant:#45464f;
+  --l-outline:#757680;
+  --l-outline-variant:#c5c6d1;
+  --l-surface-container-lowest:#ffffff;
+  --l-surface-container-low:#f5f3f9;
+  --l-surface-container:#efedf3;
+  --l-surface-container-high:#e9e7ed;
+  --l-surface-container-highest:#e3e2e7;
+  --l-surface-dim:#dbd9df;
+  --l-surface-bright:#faf8fe;
+  --l-inverse-surface:#303035;
+  --l-inverse-on-surface:#f2f0f6;
+  --l-inverse-primary:#b7c5fa;
+  --l-surface-tint:#4f5d8b;
+  --l-scrim:#000000;
+  --l-shadow:#000000;
+  --d-primary:#b7c5fa;
+  --d-on-primary:#202e5a;
+  --d-primary-container:#374572;
+  --d-on-primary-container:#dbe1ff;
+  --d-secondary:#c1c5dd;
+  --d-on-secondary:#2b3042;
+  --d-secondary-container:#414659;
+  --d-on-secondary-container:#dde1f9;
+  --d-tertiary:#d8bceb;
+  --d-on-tertiary:#3c284d;
+  --d-tertiary-container:#543e65;
+  --d-on-tertiary-container:#f2daff;
+  --d-error:#ffb2b9;
+  --d-on-error:#67001f;
+  --d-error-container:#871c34;
+  --d-on-error-container:#ffdadc;
+  --d-surface:#121317;
+  --d-on-surface:#e3e2e7;
+  --d-surface-variant:#45464f;
+  --d-on-surface-variant:#c5c6d1;
+  --d-outline:#8f909a;
+  --d-outline-variant:#45464f;
+  --d-surface-container-lowest:#0d0e12;
+  --d-surface-container-low:#1b1b20;
+  --d-surface-container:#1f1f24;
+  --d-surface-container-high:#292a2e;
+  --d-surface-container-highest:#343439;
+  --d-surface-dim:#121317;
+  --d-surface-bright:#38393d;
+  --d-inverse-surface:#e3e2e7;
+  --d-inverse-on-surface:#303035;
+  --d-inverse-primary:#4f5d8b;
+  --d-surface-tint:#b7c5fa;
+  --d-scrim:#000000;
+  --d-shadow:#000000;
+}
+
+:root[data-palette="violet"]{
+  --seed:#6D4AE0;
+  --l-primary:#625789;
+  --l-primary:#625789;
+  --l-on-primary:#ffffff;
+  --l-primary-container:#e7deff;
+  --l-on-primary-container:#1e1341;
+  --l-secondary:#615b71;
+  --l-on-secondary:#ffffff;
+  --l-secondary-container:#e7dff8;
+  --l-on-secondary-container:#1d192b;
+  --l-tertiary:#795272;
+  --l-on-tertiary:#ffffff;
+  --l-tertiary-container:#ffd7f4;
+  --l-on-tertiary-container:#2f0f2c;
+  --l-error:#a7354a;
+  --l-on-error:#ffffff;
+  --l-error-container:#ffdadc;
+  --l-on-error-container:#400010;
+  --l-surface:#fdf8fe;
+  --l-on-surface:#1c1b1f;
+  --l-surface-variant:#e6e0ec;
+  --l-on-surface-variant:#48454f;
+  --l-outline:#797580;
+  --l-outline-variant:#cac4d0;
+  --l-surface-container-lowest:#ffffff;
+  --l-surface-container-low:#f7f2f8;
+  --l-surface-container:#f1ecf3;
+  --l-surface-container-high:#ece6ed;
+  --l-surface-container-highest:#e6e1e7;
+  --l-surface-dim:#ddd8df;
+  --l-surface-bright:#fdf8fe;
+  --l-inverse-surface:#313034;
+  --l-inverse-on-surface:#f4eff6;
+  --l-inverse-primary:#cbbff8;
+  --l-surface-tint:#625789;
+  --l-scrim:#000000;
+  --l-shadow:#000000;
+  --d-primary:#cbbff8;
+  --d-on-primary:#332958;
+  --d-primary-container:#4a4070;
+  --d-on-primary-container:#e7deff;
+  --d-secondary:#cac3dc;
+  --d-on-secondary:#322e41;
+  --d-secondary-container:#494458;
+  --d-on-secondary-container:#e7dff8;
+  --d-tertiary:#e9b8dd;
+  --d-on-tertiary:#462442;
+  --d-tertiary-container:#5f3a59;
+  --d-on-tertiary-container:#ffd7f4;
+  --d-error:#ffb2b9;
+  --d-on-error:#67001f;
+  --d-error-container:#871c34;
+  --d-on-error-container:#ffdadc;
+  --d-surface:#141317;
+  --d-on-surface:#e6e1e7;
+  --d-surface-variant:#48454f;
+  --d-on-surface-variant:#cac4d0;
+  --d-outline:#938f9a;
+  --d-outline-variant:#48454f;
+  --d-surface-container-lowest:#0f0e12;
+  --d-surface-container-low:#1c1b1f;
+  --d-surface-container:#201f23;
+  --d-surface-container-high:#2b292e;
+  --d-surface-container-highest:#363439;
+  --d-surface-dim:#141317;
+  --d-surface-bright:#3a383d;
+  --d-inverse-surface:#e6e1e7;
+  --d-inverse-on-surface:#313034;
+  --d-inverse-primary:#625789;
+  --d-surface-tint:#cbbff8;
+  --d-scrim:#000000;
+  --d-shadow:#000000;
+}
+
+:root[data-palette="rose"]{
+  --seed:#C2185B;
+  --l-primary:#894c5b;
+  --l-primary:#894c5b;
+  --l-on-primary:#ffffff;
+  --l-primary-container:#ffd9df;
+  --l-on-primary-container:#380b19;
+  --l-secondary:#75565c;
+  --l-on-secondary:#ffffff;
+  --l-secondary-container:#ffd9df;
+  --l-on-secondary-container:#2b151a;
+  --l-tertiary:#735378;
+  --l-on-tertiary:#ffffff;
+  --l-tertiary-container:#fdd6ff;
+  --l-on-tertiary-container:#2b1031;
+  --l-error:#a73736;
+  --l-on-error:#ffffff;
+  --l-error-container:#ffdad7;
+  --l-on-error-container:#410004;
+  --l-surface:#fff8f7;
+  --l-on-surface:#211a1b;
+  --l-surface-variant:#f4dde0;
+  --l-on-surface-variant:#524345;
+  --l-outline:#857375;
+  --l-outline-variant:#d7c1c4;
+  --l-surface-container-lowest:#ffffff;
+  --l-surface-container-low:#fff0f1;
+  --l-surface-container:#f9eaec;
+  --l-surface-container-high:#f3e5e6;
+  --l-surface-container-highest:#eedfe0;
+  --l-surface-dim:#e5d7d8;
+  --l-surface-bright:#fff8f7;
+  --l-inverse-surface:#372e30;
+  --l-inverse-on-surface:#fcedef;
+  --l-inverse-primary:#feb2c2;
+  --l-surface-tint:#894c5b;
+  --l-scrim:#000000;
+  --l-shadow:#000000;
+  --d-primary:#feb2c2;
+  --d-on-primary:#52202d;
+  --d-primary-container:#6d3543;
+  --d-on-primary-container:#ffd9df;
+  --d-secondary:#e4bdc3;
+  --d-on-secondary:#43292f;
+  --d-secondary-container:#5b3f45;
+  --d-on-secondary-container:#ffd9df;
+  --d-tertiary:#e1bae4;
+  --d-on-tertiary:#422648;
+  --d-tertiary-container:#5a3c5f;
+  --d-on-tertiary-container:#fdd6ff;
+  --d-error:#ffb3ae;
+  --d-on-error:#67040d;
+  --d-error-container:#871f21;
+  --d-on-error-container:#ffdad7;
+  --d-surface:#181213;
+  --d-on-surface:#eedfe0;
+  --d-surface-variant:#524345;
+  --d-on-surface-variant:#d7c1c4;
+  --d-outline:#9f8c8f;
+  --d-outline-variant:#524345;
+  --d-surface-container-lowest:#130c0e;
+  --d-surface-container-low:#211a1b;
+  --d-surface-container:#251e1f;
+  --d-surface-container-high:#302829;
+  --d-surface-container-highest:#3b3334;
+  --d-surface-dim:#181213;
+  --d-surface-bright:#403738;
+  --d-inverse-surface:#eedfe0;
+  --d-inverse-on-surface:#372e30;
+  --d-inverse-primary:#894c5b;
+  --d-surface-tint:#feb2c2;
+  --d-scrim:#000000;
+  --d-shadow:#000000;
+}
+
+:root[data-palette="amber"]{
+  --seed:#C25E12;
+  --l-primary:#88512e;
+  --l-primary:#88512e;
+  --l-on-primary:#ffffff;
+  --l-primary-container:#ffdbc9;
+  --l-on-primary-container:#321200;
+  --l-secondary:#765847;
+  --l-on-secondary:#ffffff;
+  --l-secondary-container:#ffdbc9;
+  --l-on-secondary-container:#2b160a;
+  --l-tertiary:#6b5e26;
+  --l-on-tertiary:#ffffff;
+  --l-tertiary-container:#f5e29d;
+  --l-on-tertiary-container:#221b00;
+  --l-error:#a63a20;
+  --l-on-error:#ffffff;
+  --l-error-container:#ffdad2;
+  --l-on-error-container:#3d0700;
+  --l-surface:#fff8f5;
+  --l-on-surface:#211a16;
+  --l-surface-variant:#f5ded3;
+  --l-on-surface-variant:#53443c;
+  --l-outline:#85736a;
+  --l-outline-variant:#d8c2b7;
+  --l-surface-container-lowest:#ffffff;
+  --l-surface-container-low:#fff1eb;
+  --l-surface-container:#faebe4;
+  --l-surface-container-high:#f4e5df;
+  --l-surface-container-highest:#eee0d9;
+  --l-surface-dim:#e6d7d1;
+  --l-surface-bright:#fff8f5;
+  --l-inverse-surface:#372f2a;
+  --l-inverse-on-surface:#fdeee7;
+  --l-inverse-primary:#ffb68c;
+  --l-surface-tint:#88512e;
+  --l-scrim:#000000;
+  --l-shadow:#000000;
+  --d-primary:#ffb68c;
+  --d-on-primary:#502405;
+  --d-primary-container:#6c3a19;
+  --d-on-primary-container:#ffdbc9;
+  --d-secondary:#e5bfaa;
+  --d-on-secondary:#432b1d;
+  --d-secondary-container:#5c4131;
+  --d-on-secondary-container:#ffdbc9;
+  --d-tertiary:#d8c683;
+  --d-on-tertiary:#3a3000;
+  --d-tertiary-container:#524610;
+  --d-on-tertiary-container:#f5e29d;
+  --d-error:#ffb4a3;
+  --d-on-error:#621100;
+  --d-error-container:#85230a;
+  --d-on-error-container:#ffdad2;
+  --d-surface:#19120e;
+  --d-on-surface:#eee0d9;
+  --d-surface-variant:#53443c;
+  --d-on-surface-variant:#d8c2b7;
+  --d-outline:#a08d83;
+  --d-outline-variant:#53443c;
+  --d-surface-container-lowest:#130d09;
+  --d-surface-container-low:#211a16;
+  --d-surface-container:#251e1a;
+  --d-surface-container-high:#302824;
+  --d-surface-container-highest:#3c332f;
+  --d-surface-dim:#19120e;
+  --d-surface-bright:#403733;
+  --d-inverse-surface:#eee0d9;
+  --d-inverse-on-surface:#372f2a;
+  --d-inverse-primary:#88512e;
+  --d-surface-tint:#ffb68c;
+  --d-scrim:#000000;
+  --d-shadow:#000000;
+}
+
+/* --- light 映射（默认） --- */
+:root{
+  --primary:var(--l-primary);
+  --on-primary:var(--l-on-primary);
+  --primary-container:var(--l-primary-container);
+  --on-primary-container:var(--l-on-primary-container);
+  --secondary:var(--l-secondary);
+  --on-secondary:var(--l-on-secondary);
+  --secondary-container:var(--l-secondary-container);
+  --on-secondary-container:var(--l-on-secondary-container);
+  --tertiary:var(--l-tertiary);
+  --on-tertiary:var(--l-on-tertiary);
+  --tertiary-container:var(--l-tertiary-container);
+  --on-tertiary-container:var(--l-on-tertiary-container);
+  --error:var(--l-error);
+  --on-error:var(--l-on-error);
+  --error-container:var(--l-error-container);
+  --on-error-container:var(--l-on-error-container);
+  --surface:var(--l-surface);
+  --on-surface:var(--l-on-surface);
+  --surface-variant:var(--l-surface-variant);
+  --on-surface-variant:var(--l-on-surface-variant);
+  --outline:var(--l-outline);
+  --outline-variant:var(--l-outline-variant);
+  --surface-container-lowest:var(--l-surface-container-lowest);
+  --surface-container-low:var(--l-surface-container-low);
+  --surface-container:var(--l-surface-container);
+  --surface-container-high:var(--l-surface-container-high);
+  --surface-container-highest:var(--l-surface-container-highest);
+  --surface-dim:var(--l-surface-dim);
+  --surface-bright:var(--l-surface-bright);
+  --inverse-surface:var(--l-inverse-surface);
+  --inverse-on-surface:var(--l-inverse-on-surface);
+  --inverse-primary:var(--l-inverse-primary);
+  --surface-tint:var(--l-surface-tint);
+  --scrim:var(--l-scrim);
+  --shadow:var(--l-shadow);
+}
+
+/* --- 跟随系统深色 --- */
+@media (prefers-color-scheme:dark){
+:root:not([data-theme="light"]){
+    --primary:var(--d-primary);
+    --on-primary:var(--d-on-primary);
+    --primary-container:var(--d-primary-container);
+    --on-primary-container:var(--d-on-primary-container);
+    --secondary:var(--d-secondary);
+    --on-secondary:var(--d-on-secondary);
+    --secondary-container:var(--d-secondary-container);
+    --on-secondary-container:var(--d-on-secondary-container);
+    --tertiary:var(--d-tertiary);
+    --on-tertiary:var(--d-on-tertiary);
+    --tertiary-container:var(--d-tertiary-container);
+    --on-tertiary-container:var(--d-on-tertiary-container);
+    --error:var(--d-error);
+    --on-error:var(--d-on-error);
+    --error-container:var(--d-error-container);
+    --on-error-container:var(--d-on-error-container);
+    --surface:var(--d-surface);
+    --on-surface:var(--d-on-surface);
+    --surface-variant:var(--d-surface-variant);
+    --on-surface-variant:var(--d-on-surface-variant);
+    --outline:var(--d-outline);
+    --outline-variant:var(--d-outline-variant);
+    --surface-container-lowest:var(--d-surface-container-lowest);
+    --surface-container-low:var(--d-surface-container-low);
+    --surface-container:var(--d-surface-container);
+    --surface-container-high:var(--d-surface-container-high);
+    --surface-container-highest:var(--d-surface-container-highest);
+    --surface-dim:var(--d-surface-dim);
+    --surface-bright:var(--d-surface-bright);
+    --inverse-surface:var(--d-inverse-surface);
+    --inverse-on-surface:var(--d-inverse-on-surface);
+    --inverse-primary:var(--d-inverse-primary);
+    --surface-tint:var(--d-surface-tint);
+    --scrim:var(--d-scrim);
+    --shadow:var(--d-shadow);
+}
+}
+
+/* --- 手动指定深色 --- */
+:root[data-theme="dark"]{
+  --primary:var(--d-primary);
+  --on-primary:var(--d-on-primary);
+  --primary-container:var(--d-primary-container);
+  --on-primary-container:var(--d-on-primary-container);
+  --secondary:var(--d-secondary);
+  --on-secondary:var(--d-on-secondary);
+  --secondary-container:var(--d-secondary-container);
+  --on-secondary-container:var(--d-on-secondary-container);
+  --tertiary:var(--d-tertiary);
+  --on-tertiary:var(--d-on-tertiary);
+  --tertiary-container:var(--d-tertiary-container);
+  --on-tertiary-container:var(--d-on-tertiary-container);
+  --error:var(--d-error);
+  --on-error:var(--d-on-error);
+  --error-container:var(--d-error-container);
+  --on-error-container:var(--d-on-error-container);
+  --surface:var(--d-surface);
+  --on-surface:var(--d-on-surface);
+  --surface-variant:var(--d-surface-variant);
+  --on-surface-variant:var(--d-on-surface-variant);
+  --outline:var(--d-outline);
+  --outline-variant:var(--d-outline-variant);
+  --surface-container-lowest:var(--d-surface-container-lowest);
+  --surface-container-low:var(--d-surface-container-low);
+  --surface-container:var(--d-surface-container);
+  --surface-container-high:var(--d-surface-container-high);
+  --surface-container-highest:var(--d-surface-container-highest);
+  --surface-dim:var(--d-surface-dim);
+  --surface-bright:var(--d-surface-bright);
+  --inverse-surface:var(--d-inverse-surface);
+  --inverse-on-surface:var(--d-inverse-on-surface);
+  --inverse-primary:var(--d-inverse-primary);
+  --surface-tint:var(--d-surface-tint);
+  --scrim:var(--d-scrim);
+  --shadow:var(--d-shadow);
+}
+
+/* ============================================================
+   YiDrop 介绍站点 · Material You (Material Design 3) 令牌
+   纯原生 CSS / JS，无任何前端框架与外部依赖
+   ============================================================ */
+
+:root{
+  /* ---------- 字体 ---------- */
+  --md-ref-typeface-plain:'Nebulove',system-ui,-apple-system,'Segoe UI',Roboto,'Noto Sans SC','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;
+  --md-ref-typeface-mono:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace;
+
+  /* ---------- 形状 ---------- */
+  --shape-none:0;
+  --shape-xs:4px;
+  --shape-sm:8px;
+  --shape-md:12px;
+  --shape-lg:16px;
+  --shape-xl:28px;
+  --shape-full:999px;
+  /* 短/长边圆角（M3 Expressive 常用） */
+  --shape-btn:20px;
+  --shape-card:16px;
+  --shape-sheet:28px;
+  --shape-fab:16px;
+
+  /* ---------- 动效 ---------- */
+  --motion-short1:50ms;
+  --motion-short2:100ms;
+  --motion-short3:150ms;
+  --motion-short4:200ms;
+  --motion-medium1:250ms;
+  --motion-medium2:300ms;
+  --motion-long1:450ms;
+  --motion-long2:500ms;
+  --ease-standard:cubic-bezier(.2,0,0,1);
+  --ease-standard-decel:cubic-bezier(0,0,0,1);
+  --ease-standard-accel:cubic-bezier(.3,0,1,1);
+  --ease-emphasized:cubic-bezier(.2,0,0,1);
+  --ease-emphasized-decel:cubic-bezier(.05,.7,.1,1);
+  --ease-emphasized-accel:cubic-bezier(.3,0,.8,.15);
+
+  /* ---------- 状态层不透明度 ---------- */
+  --state-hover:.08;
+  --state-focus:.1;
+  --state-pressed:.1;
+  --state-drag:.16;
+
+  /* ---------- 高度（Elevation） ---------- */
+  --elev-1:0 1px 2px 0 color-mix(in srgb,var(--scrim) 30%,transparent),0 1px 3px 1px color-mix(in srgb,var(--scrim) 15%,transparent);
+  --elev-2:0 1px 2px 0 color-mix(in srgb,var(--scrim) 30%,transparent),0 2px 6px 2px color-mix(in srgb,var(--scrim) 15%,transparent);
+  --elev-3:0 4px 8px 3px color-mix(in srgb,var(--scrim) 15%,transparent),0 1px 3px 0 color-mix(in srgb,var(--scrim) 30%,transparent);
+  --elev-4:0 6px 10px 4px color-mix(in srgb,var(--scrim) 15%,transparent),0 2px 3px 0 color-mix(in srgb,var(--scrim) 30%,transparent);
+  --elev-5:0 8px 12px 6px color-mix(in srgb,var(--scrim) 15%,transparent),0 4px 4px 0 color-mix(in srgb,var(--scrim) 30%,transparent);
+
+  /* ---------- 布局 ---------- */
+  --page-max:1200px;
+  --gutter:clamp(16px,4vw,32px);
+  --bar-h:64px;
+}
+
+/* ---------- 基础 ---------- */
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scrollbar-color:var(--outline-variant) transparent}
+body{
+  margin:0;
+  font-family:var(--md-ref-typeface-plain);
+  font-size:16px;
+  line-height:1.6;
+  background:var(--surface);
+  color:var(--on-surface);
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  transition:background-color var(--motion-medium1) var(--ease-standard),color var(--motion-medium1) var(--ease-standard);
+}
+img,svg{display:block;max-width:100%}
+a{color:var(--primary);text-decoration:none}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+:focus-visible{outline:3px solid var(--primary);outline-offset:2px;border-radius:var(--shape-xs)}
+::selection{background:var(--primary-container);color:var(--on-primary-container)}
+h1,h2,h3,h4{margin:0;font-family:var(--md-ref-typeface-plain);font-weight:500;letter-spacing:-.01em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+hr{border:0;border-top:1px solid var(--outline-variant);margin:0}
+code,kbd,pre{font-family:var(--md-ref-typeface-mono)}
+
+/* ---------- 排版角色（M3 type scale） ---------- */
+.t-display{font-size:clamp(2.6rem,7vw,4.6rem);line-height:1.06;letter-spacing:-.03em;font-weight:600}
+.t-headline{font-size:clamp(1.75rem,4vw,2.5rem);line-height:1.2;letter-spacing:-.02em;font-weight:600}
+.t-title{font-size:1.375rem;line-height:1.3;font-weight:600;letter-spacing:-.01em}
+.t-subtitle{font-size:1.0625rem;line-height:1.5;font-weight:600}
+.t-body{font-size:1rem;line-height:1.65}
+.t-body-sm{font-size:.9375rem;line-height:1.6}
+.t-label{font-size:.875rem;line-height:1.45;font-weight:600;letter-spacing:.006em}
+.t-label-sm{font-size:.8125rem;line-height:1.4;font-weight:600;letter-spacing:.03em}
+.t-code{font-size:.875rem;line-height:1.7}
+.muted{color:var(--on-surface-variant)}
+.center{text-align:center}
+
+/* ---------- 布局工具 ---------- */
+.wrap{width:100%;max-width:var(--page-max);margin-inline:auto;padding-inline:var(--gutter)}
+section{scroll-margin-top:calc(var(--bar-h) + 24px)}
+.section{padding-block:clamp(56px,9vw,104px)}
+.section--tight{padding-block:clamp(40px,6vw,64px)}
+.section-head{max-width:720px;margin-bottom:clamp(28px,4vw,44px)}
+.section-head.center{margin-inline:auto}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.8125rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--primary);margin-bottom:12px;
+}
+.eyebrow::before{content:"";width:18px;height:2px;border-radius:2px;background:currentColor}
+.grid{display:grid;gap:clamp(12px,2vw,20px)}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:200;background:var(--inverse-surface);color:var(--inverse-on-surface);padding:10px 18px;border-radius:var(--shape-full);transition:top var(--motion-short4) var(--ease-standard)}
+.skip-link:focus{top:12px}
+
+/* ---------- 材质：卡片 / 纸片 ---------- */
+.surface-card{
+  position:relative;
+  background:var(--surface-container-low);
+  border:1px solid var(--outline-variant);
+  border-radius:var(--shape-xl);
+  padding:clamp(20px,3vw,28px);
+  transition:background-color var(--motion-short4) var(--ease-standard),
+             border-color var(--motion-short4) var(--ease-standard),
+             box-shadow var(--motion-short4) var(--ease-standard),
+             transform var(--motion-short4) var(--ease-standard);
+}
+.surface-card--flat{background:var(--surface-container);border-color:transparent}
+.surface-card--tint{background:var(--primary-container);border-color:transparent;color:var(--on-primary-container)}
+.surface-card--interactive{cursor:pointer}
+.surface-card--interactive:hover{box-shadow:var(--elev-1);border-color:color-mix(in srgb,var(--primary) 35%,var(--outline-variant))}
+.surface-card--interactive:active{transform:scale(.99)}
+
+/* ---------- 按钮 ---------- */
+.btn{
+  position:relative;overflow:hidden;
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  min-height:44px;padding:0 24px;
+  border-radius:var(--shape-btn);
+  font-size:.9375rem;font-weight:600;letter-spacing:.01em;
+  text-decoration:none;color:var(--primary);
+  isolation:isolate;
+  transition:box-shadow var(--motion-short4) var(--ease-standard),background-color var(--motion-short4) var(--ease-standard),border-color var(--motion-short4) var(--ease-standard),transform var(--motion-short2) var(--ease-standard);
+}
+.btn::before{
+  content:"";position:absolute;inset:0;z-index:-1;background:currentColor;
+  opacity:0;transition:opacity var(--motion-short2) var(--ease-standard);
+}
+.btn:hover::before{opacity:var(--state-hover)}
+.btn:active::before{opacity:var(--state-pressed)}
+.btn:active{transform:scale(.98)}
+.btn .icon{width:20px;height:20px;flex:none}
+.btn--filled{background:var(--primary);color:var(--on-primary)}
+.btn--filled:hover{box-shadow:var(--elev-1)}
+.btn--tonal{background:var(--secondary-container);color:var(--on-secondary-container)}
+.btn--outlined{border:1px solid var(--outline);color:var(--primary)}
+.btn--text{padding:0 14px}
+.btn--large{min-height:52px;padding:0 28px;font-size:1rem}
+.icon-btn{
+  position:relative;overflow:hidden;
+  display:inline-flex;align-items:center;justify-content:center;
+  width:44px;height:44px;border-radius:var(--shape-full);
+  color:var(--on-surface-variant);isolation:isolate;
+  transition:color var(--motion-short2) var(--ease-standard);
+}
+.icon-btn::before{content:"";position:absolute;inset:0;z-index:-1;background:currentColor;opacity:0;transition:opacity var(--motion-short2) var(--ease-standard)}
+.icon-btn:hover::before{opacity:var(--state-hover)}
+.icon-btn:active::before{opacity:var(--state-pressed)}
+.icon-btn .icon{width:22px;height:22px}
+.ripple{position:absolute;border-radius:50%;transform:scale(0);background:currentColor;opacity:.22;pointer-events:none;animation:ripple var(--motion-long1) var(--ease-standard-decel) forwards}
+@keyframes ripple{to{transform:scale(2.6);opacity:0}}
+
+/* ---------- 芯片 ---------- */
+.chip{
+  display:inline-flex;align-items:center;gap:8px;
+  height:32px;padding:0 12px;border-radius:var(--shape-sm);
+  border:1px solid var(--outline-variant);
+  background:transparent;color:var(--on-surface-variant);
+  font-size:.8125rem;font-weight:600;white-space:nowrap;
+}
+.chip--filled{background:var(--secondary-container);border-color:transparent;color:var(--on-secondary-container)}
+.chip--accent{background:color-mix(in srgb,var(--primary) 14%,transparent);border-color:color-mix(in srgb,var(--primary) 30%,transparent);color:var(--primary)}
+.chip .icon{width:16px;height:16px}
+.chip-set{display:flex;flex-wrap:wrap;gap:8px}
+
+/* ---------- 顶栏 ---------- */
+.app-bar{
+  position:sticky;top:0;z-index:100;
+  background:color-mix(in srgb,var(--surface) 82%,transparent);
+  backdrop-filter:saturate(180%) blur(18px);
+  -webkit-backdrop-filter:saturate(180%) blur(18px);
+  border-bottom:1px solid transparent;
+  transition:background-color var(--motion-medium1) var(--ease-standard),border-color var(--motion-medium1) var(--ease-standard),box-shadow var(--motion-medium1) var(--ease-standard);
+}
+.app-bar.is-stuck{background:color-mix(in srgb,var(--surface-container) 88%,transparent);border-bottom-color:var(--outline-variant);box-shadow:var(--elev-1)}
+.app-bar__inner{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;height:var(--bar-h)}
+.brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font-family:var(--md-ref-typeface-plain);font-weight:600;font-size:1.1875rem;letter-spacing:-.01em;grid-column:1;justify-self:start;white-space:nowrap}
+.brand__mark{width:34px;height:34px;color:var(--primary);flex:none}
+.brand__mark svg{width:100%;height:100%}
+.brand__sub{font-size:.6875rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--on-surface-variant)}
+.nav{display:flex;gap:2px;margin:0;grid-column:2}
+.nav a{
+  position:relative;display:inline-flex;align-items:center;height:40px;padding:0 14px;
+  border-radius:var(--shape-full);color:var(--on-surface-variant);
+  font-size:.9375rem;font-weight:600;text-decoration:none;
+  transition:color var(--motion-short2) var(--ease-standard),background-color var(--motion-short2) var(--ease-standard);
+}
+.nav a:hover{background:color-mix(in srgb,var(--on-surface) 8%,transparent);color:var(--on-surface)}
+.nav a[aria-current="true"]{background:var(--secondary-container);color:var(--on-secondary-container)}
+.app-bar__actions{display:flex;align-items:center;gap:4px;margin:0;grid-column:3;justify-self:end}
+#menuBtn{display:none}
+.nav--mobile{display:none;margin:0}
+
+/* ---------- 菜单 ---------- */
+.menu{
+  position:absolute;z-index:120;min-width:230px;
+  right:var(--gutter);top:calc(var(--bar-h) - 12px);
+  background:var(--surface-container);color:var(--on-surface);
+  border-radius:var(--shape-xs);padding:8px;box-shadow:var(--elev-2);
+  opacity:0;transform:scale(.94);transform-origin:top right;pointer-events:none;
+  transition:opacity var(--motion-short3) var(--ease-standard),transform var(--motion-short4) var(--ease-emphasized-decel);
+}
+.menu[data-open="true"]{opacity:1;transform:scale(1);pointer-events:auto}
+.menu__item{
+  display:flex;align-items:center;gap:12px;width:100%;
+  padding:10px 12px;border-radius:var(--shape-full);
+  font-size:.9375rem;font-weight:500;text-align:left;color:inherit;
+  transition:background-color var(--motion-short2) var(--ease-standard);
+}
+.menu__item:hover{background:color-mix(in srgb,var(--on-surface) 8%,transparent)}
+.menu__item[aria-checked="true"]{background:var(--secondary-container);color:var(--on-secondary-container)}
+.menu__item .icon{width:20px;height:20px;color:var(--on-surface-variant)}
+.menu__item[aria-checked="true"] .icon{color:inherit}
+.menu__label{padding:8px 12px 4px;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-surface-variant)}
+.swatch{width:22px;height:22px;border-radius:var(--shape-full);flex:none;border:1px solid color-mix(in srgb,var(--on-surface) 18%,transparent)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding-block:clamp(72px,8vw,120px) clamp(66px,7vw,110px);overflow:hidden}
+.hero__bg{position:absolute;inset:-20% -10% auto -10%;height:120%;z-index:-1;pointer-events:none;filter:blur(60px);opacity:.75}
+.blob{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+[data-theme="dark"] .blob{mix-blend-mode:screen}
+.blob--1{width:46vw;height:46vw;left:-8vw;top:-6vw;background:var(--primary-container);animation:drift 22s var(--ease-standard) infinite alternate}
+.blob--2{width:38vw;height:38vw;right:-6vw;top:2vw;background:var(--tertiary-container);animation:drift 26s var(--ease-standard) infinite alternate-reverse}
+.blob--3{width:30vw;height:30vw;left:38vw;top:22vw;background:var(--secondary-container);animation:drift 30s var(--ease-standard) infinite alternate}
+@keyframes drift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(4vw,3vw,0) scale(1.12)}}
+.hero__grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(24px,4vw,56px);align-items:center}
+.hero__pill{
+  display:inline-flex;align-items:center;gap:10px;height:36px;padding:0 14px 0 14px;border-radius:var(--shape-full);
+  background:var(--surface-container);border:1px solid var(--outline-variant);
+  font-size:.8125rem;font-weight:600;color:var(--on-surface-variant);margin-bottom:22px;
+}
+.hero__pill b{color:var(--primary)}
+.hero__pill .chip{height:24px;border-color:transparent;background:var(--primary-container);color:var(--on-primary-container);font-size:.75rem}
+.hero h1{margin-bottom:18px}
+.grad{background:linear-gradient(96deg,var(--primary) 8%,var(--tertiary) 58%,var(--primary) 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sheen 9s var(--ease-standard) infinite alternate}
+@keyframes sheen{from{background-position:0% 50%}to{background-position:100% 50%}}
+.hero__lede{font-size:clamp(1rem,2vw,1.1875rem);color:var(--on-surface-variant);max-width:56ch;margin-bottom:28px}
+.hero__cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:26px}
+.hero__meta{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.8125rem;color:var(--on-surface-variant)}
+.hero__meta span{display:inline-flex;align-items:center;gap:6px}
+.hero__meta .icon{width:16px;height:16px;color:var(--primary)}
+
+/* Hero 右侧应用模拟 */
+.stage{position:relative;padding:clamp(8px,2vw,20px)}
+.window{
+  position:relative;background:var(--surface-container-lowest);
+  border:1px solid var(--outline-variant);border-radius:var(--shape-xl);
+  box-shadow:var(--elev-3);overflow:hidden;
+}
+.window__bar{display:flex;align-items:center;gap:8px;padding:12px 16px;background:var(--primary-container);color:var(--on-primary-container)}
+.window__dots{display:flex;gap:6px}
+.window__dots i{width:10px;height:10px;border-radius:50%;background:currentColor;opacity:.45}
+.window__title{font-size:.8125rem;font-weight:700;letter-spacing:.04em}
+.window__body{display:grid;grid-template-columns:132px minmax(0,1fr);min-height:300px}
+.mock-side{padding:16px 12px;background:var(--surface-container-low);border-right:1px solid var(--outline-variant);display:flex;flex-direction:column;gap:4px}
+.mock-side__brand{font-family:var(--md-ref-typeface-plain);font-weight:700;font-size:1rem;padding:4px 12px 14px;letter-spacing:.02em}
+.mock-nav{display:flex;align-items:center;gap:10px;padding:9px 12px;border-radius:var(--shape-full);font-size:.8125rem;font-weight:600;color:var(--on-surface-variant)}
+.mock-nav .icon{width:17px;height:17px}
+.mock-nav.is-active{background:var(--secondary-container);color:var(--on-secondary-container)}
+.mock-main{padding:20px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.mock-label{font-size:.75rem;font-weight:700;letter-spacing:.06em;color:var(--on-surface-variant)}
+.mock-actions{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}
+.mock-action{display:flex;flex-direction:column;align-items:center;gap:6px;padding:12px 6px;border-radius:var(--shape-md);background:var(--surface-container);font-size:.6875rem;font-weight:600;color:var(--on-surface-variant)}
+.mock-action .icon{width:20px;height:20px;color:var(--primary)}
+.mock-action:first-child{background:var(--primary-container);color:var(--on-primary-container)}
+.mock-action:first-child .icon{color:inherit}
+.mock-device{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:var(--shape-md);background:var(--surface-container);border:1px solid var(--outline-variant)}
+.mock-device__icon{width:38px;height:38px;flex:none;display:grid;place-items:center;border-radius:var(--shape-sm);background:var(--surface-container-highest);color:var(--on-surface)}
+.mock-device__icon .icon{width:20px;height:20px}
+.mock-device__name{font-size:.875rem;font-weight:600}
+.mock-device__tags{display:flex;gap:6px;align-items:center;margin-top:3px}
+.mock-tag{font-size:.625rem;font-weight:700;padding:2px 7px;border-radius:var(--shape-xs);background:var(--surface-container-highest);color:var(--on-surface-variant)}
+.heart{margin-left:auto;color:var(--primary)}
+.heart .icon{width:18px;height:18px}
+.mock-progress{margin-top:auto;padding:16px;border-radius:var(--shape-lg);background:var(--surface-container);border:1px solid var(--outline-variant)}
+.mock-progress__head{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;font-size:.8125rem;font-weight:600}
+.mock-progress__head span:last-child{color:var(--primary)}
+.bar{height:6px;border-radius:var(--shape-full);background:var(--surface-container-highest);overflow:hidden}
+.bar__fill{height:100%;border-radius:inherit;background:var(--primary);width:34%;animation:progress 4.6s var(--ease-emphasized) infinite}
+@keyframes progress{0%{width:4%}45%{width:72%}70%{width:100%}100%{width:100%}}
+.mock-progress__stats{display:flex;gap:16px;flex-wrap:wrap;margin-top:10px;font-size:.6875rem;color:var(--on-surface-variant)}
+.mock-progress__stats b{color:var(--on-surface);font-weight:600}
+.float-chip{
+  position:absolute;display:inline-flex;align-items:center;gap:8px;
+  height:34px;padding:0 14px;border-radius:var(--shape-full);
+  background:var(--inverse-surface);color:var(--inverse-on-surface);
+  font-size:.75rem;font-weight:700;box-shadow:var(--elev-2);white-space:nowrap;
+}
+.float-chip .icon{width:15px;height:15px;color:var(--inverse-primary)}
+.float-chip--a{left:-8px;top:24%;animation:bob 6s var(--ease-standard) infinite alternate}
+.float-chip--b{right:-8px;top:52%;background:var(--primary);color:var(--on-primary);animation:bob 7.5s var(--ease-standard) infinite alternate-reverse}
+.float-chip--b .icon{color:inherit}
+.float-chip--c{left:8%;bottom:2%;animation:bob 8.5s var(--ease-standard) infinite alternate}
+@keyframes bob{from{transform:translateY(-7px)}to{transform:translateY(7px)}}
+
+/* ---------- 数据条 ---------- */
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(10px,1.6vw,16px)}
+.stat{padding:20px;border-radius:var(--shape-xl);background:var(--surface-container);text-align:center}
+.stat__num{font-family:var(--md-ref-typeface-plain);font-size:clamp(1.5rem,3vw,2rem);font-weight:700;letter-spacing:-.02em;color:var(--primary);display:block}
+.stat__label{font-size:.8125rem;color:var(--on-surface-variant);font-weight:600}
+
+/* ---------- 功能卡 ---------- */
+.features{grid-template-columns:repeat(auto-fit,minmax(270px,1fr))}
+.feature{display:flex;flex-direction:column;gap:14px}
+.feature__icon{
+  width:48px;height:48px;border-radius:var(--shape-lg);display:grid;place-items:center;
+  background:var(--primary-container);color:var(--on-primary-container);flex:none;
+  transition:transform var(--motion-medium2) var(--ease-emphasized);
+}
+.feature:hover .feature__icon{transform:scale(1.06) rotate(-3deg)}
+.feature__icon .icon{width:24px;height:24px}
+.feature:nth-child(2n) .feature__icon{background:var(--tertiary-container);color:var(--on-tertiary-container)}
+.feature:nth-child(3n) .feature__icon{background:var(--secondary-container);color:var(--on-secondary-container)}
+.feature h3{font-size:1.0625rem;font-weight:600}
+.feature p{font-size:.9375rem;color:var(--on-surface-variant)}
+.feature__tag{margin-top:auto;font-size:.75rem;font-weight:700;color:var(--primary);letter-spacing:.04em}
+
+/* ---------- 双栏内容 ---------- */
+.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:start}
+.split--reverse .split__aside{order:-1}
+
+/* ---------- 步骤 ---------- */
+.steps{counter-reset:step;display:flex;flex-direction:column;gap:4px}
+.step{position:relative;display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;padding-bottom:26px}
+.step:last-child{padding-bottom:0}
+.step::before{
+  counter-increment:step;content:counter(step,decimal-leading-zero);
+  width:44px;height:44px;border-radius:var(--shape-full);flex:none;
+  display:grid;place-items:center;
+  background:var(--primary-container);color:var(--on-primary-container);
+  font-family:var(--md-ref-typeface-plain);font-size:.875rem;font-weight:700;
+}
+.step::after{content:"";position:absolute;left:21px;top:52px;bottom:6px;width:2px;background:var(--outline-variant)}
+.step:last-child::after{display:none}
+.step__body h3{font-size:1.0625rem;margin-bottom:6px}
+.step__body p{font-size:.9375rem;color:var(--on-surface-variant)}
+
+/* ---------- 表格 ---------- */
+.table-wrap{overflow-x:auto;border:1px solid var(--outline-variant);border-radius:var(--shape-lg);background:var(--surface-container-low)}
+table{width:100%;border-collapse:collapse;font-size:.90625rem;min-width:420px}
+caption{text-align:left;padding:16px 18px 0;font-size:.75rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--on-surface-variant)}
+th,td{padding:13px 18px;text-align:left;border-bottom:1px solid var(--outline-variant)}
+thead th{background:var(--surface-container);font-size:.75rem;font-weight:700;letter-spacing:.04em;color:var(--on-surface-variant);text-transform:uppercase}
+tbody tr:last-child th,tbody tr:last-child td{border-bottom:0}
+tbody tr:hover{background:color-mix(in srgb,var(--primary) 5%,transparent)}
+td b,th b{color:var(--primary);font-weight:700}
+
+/* ---------- 代码块 ---------- */
+.code{
+  position:relative;background:var(--surface-container-highest);color:var(--on-surface);
+  border-radius:var(--shape-lg);padding:18px 20px;overflow-x:auto;
+  border:1px solid var(--outline-variant);
+}
+.code pre{margin:0;font-size:.8125rem;line-height:1.75;white-space:pre}
+.code .cmt{color:var(--on-surface-variant)}
+.code .cmd{color:var(--primary);font-weight:600}
+.code__copy{position:absolute;right:10px;top:10px;background:var(--surface-container);border-radius:var(--shape-full);color:var(--on-surface-variant)}
+.code__copy:hover{color:var(--primary)}
+
+/* ---------- 预览（截图） - 叠放版：手机在电脑右下，底对齐，手机高=电脑高*2/3，关系固定 ---------- */
+.previews{display:flex;flex-direction:column;gap:clamp(22px,3vw,32px)}
+.preview-shots{
+  display:flex;
+  justify-content:center;
+  width:100%;
+}
+.preview-composite{
+  position:relative;
+  width:100%;
+  max-width:980px;
+  margin:0 auto;
+  line-height:0;
+}
+.shot{
+  position:relative;
+  margin:0;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  overflow:visible;
+  line-height:0;
+}
+.shot img{
+  display:block;
+  background:transparent !important;
+  border:0 !important;
+  box-shadow:none !important;
+  border-radius:0 !important;
+  line-height:0;
+}
+.shot--desktop{
+  width:100%;
+  z-index:1;
+}
+.shot--desktop img{
+  width:100%;
+  height:auto;
+}
+.shot--phone{
+  position:absolute;
+  right:3%;
+  bottom:0;
+  height:66.666%;
+  width:auto;
+  z-index:2;
+  display:flex;
+  align-items:flex-end;
+  justify-content:center;
+}
+.shot--phone img{
+  height:100%;
+  width:auto;
+  max-width:none;
+  object-fit:contain;
+  object-position:center bottom;
+}
+.shot__badge{
+  position:absolute;
+  left:12px;
+  bottom:12px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  height:30px;
+  padding:0 12px;
+  border-radius:var(--shape-full);
+  background:color-mix(in srgb,var(--surface) 92%,transparent);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  font-size:.75rem;
+  font-weight:700;
+  color:var(--on-surface);
+  box-shadow:var(--elev-2);
+  border:1px solid var(--outline-variant);
+  line-height:1;
+}
+.shot__badge .icon{width:14px;height:14px;color:var(--primary)}
+.shot--phone .shot__badge{
+  left:8px;
+  bottom:8px;
+  height:26px;
+  padding:0 10px;
+  font-size:.6875rem;
+}
+.preview-cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:clamp(12px,2vw,18px);
+}
+
+/* ---------- 标签页（下载） ---------- */
+.tabs{display:flex;gap:5px;border-bottom:1px solid var(--outline-variant);margin-bottom:26px;overflow-x:auto}
+.tab{
+  position:relative;display:inline-flex;align-items:center;gap:8px;
+  padding:14px 18px;border-radius:var(--shape-sm) var(--shape-sm) 0 0;
+  font-size:.9375rem;font-weight:600;color:var(--on-surface-variant);white-space:nowrap;
+  transition:background-color var(--motion-short2) var(--ease-standard),color var(--motion-short2) var(--ease-standard);
+}
+.tab .icon{width:18px;height:18px}
+.tab[aria-selected="true"]{color:var(--primary)}
+.tab[aria-selected="true"]::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;border-radius:3px 3px 0 0;background:var(--primary)}
+.tab:hover{background:color-mix(in srgb,var(--primary) 8%,transparent)}
+.tabpanel[hidden]{display:none}
+.tabpanel{animation:fade-up var(--motion-medium2) var(--ease-emphasized-decel)}
+.dl-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:clamp(12px,2vw,18px)}
+.dl{display:flex;flex-direction:column;gap:14px;text-decoration:none;color:inherit}
+.dl__top{display:flex;align-items:center;gap:12px}
+.dl__icon{width:44px;height:44px;border-radius:var(--shape-md);display:grid;place-items:center;background:var(--surface-container-high);color:var(--on-surface);flex:none}
+.dl__icon .icon{width:22px;height:22px}
+.dl__name{font-size:1rem;font-weight:600}
+.dl__file{font-family:var(--md-ref-typeface-mono);font-size:.75rem;color:var(--on-surface-variant);word-break:break-all}
+.dl__foot{margin-top:auto;display:flex;align-items:center;gap:8px;font-size:.8125rem;font-weight:700;color:var(--primary)}
+.dl__foot .icon{width:18px;height:18px;transition:transform var(--motion-short4) var(--ease-emphasized)}
+.dl:hover .dl__foot .icon{transform:translateX(4px)}
+.note{
+  display:flex;gap:12px;padding:14px 16px;border-radius:var(--shape-lg);
+  background:var(--tertiary-container);color:var(--on-tertiary-container);font-size:.875rem;
+}
+.note .icon{width:20px;height:20px;flex:none;margin-top:1px}
+.note b{font-weight:700}
+
+/* ---------- 折叠面板 ---------- */
+.accordion{display:flex;flex-direction:column;gap:10px}
+details.acc{
+  border:1px solid var(--outline-variant);border-radius:var(--shape-lg);
+  background:var(--surface-container-low);overflow:hidden;
+  transition:background-color var(--motion-short4) var(--ease-standard),border-color var(--motion-short4) var(--ease-standard)
+}
+details.acc[open]{background:var(--surface-container)}
+details.acc summary{
+  display:flex;align-items:center;gap:14px;padding:18px 20px;cursor:pointer;list-style:none;
+  font-size:1rem;font-weight:600;
+}
+details.acc summary::-webkit-details-marker{display:none}
+details.acc summary::after{
+  content:"";margin-left:auto;width:22px;height:22px;flex:none;background:currentColor;color:var(--primary);
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11 5h2v14h-2z'/%3E%3Cpath d='M5 11h14v2H5z'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M11 5h2v14h-2z'/%3E%3Cpath d='M5 11h14v2H5z'/%3E%3C/svg%3E") center/contain no-repeat;
+  transition:transform var(--motion-medium2) var(--ease-emphasized)
+}
+details.acc[open] summary::after{transform:rotate(135deg)}
+.acc__body{padding:0 20px 20px;color:var(--on-surface-variant);font-size:.9375rem;animation:fade-up var(--motion-medium2) var(--ease-emphasized-decel)}
+.acc__body p+p{margin-top:10px}
+.acc__body code{background:var(--surface-container-highest);padding:2px 6px;border-radius:var(--shape-xs);font-size:.8125rem;color:var(--on-surface)}
+.acc__body a{text-decoration:underline;text-underline-offset:3px}
+
+/* ---------- FAB / Snackbar ---------- */
+.fab{
+  position:fixed;right:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,32px);z-index:90;
+  display:inline-flex;align-items:center;gap:12px;height:56px;padding:0 20px;
+  border-radius:var(--shape-fab);background:var(--primary-container);color:var(--on-primary-container);
+  box-shadow:var(--elev-3);font-size:.9375rem;font-weight:700;
+  opacity:0;transform:translateY(24px) scale(.86);pointer-events:none;
+  transition:opacity var(--motion-medium1) var(--ease-standard),transform var(--motion-medium2) var(--ease-emphasized),background-color var(--motion-short4) var(--ease-standard),box-shadow var(--motion-short4) var(--ease-standard);
+}
+.fab.is-visible{opacity:1;transform:none;pointer-events:auto}
+.fab:hover{box-shadow:var(--elev-4)}
+.fab .icon{width:24px;height:24px}
+.snackbar{
+  position:fixed;left:50%;bottom:24px;z-index:130;
+  display:flex;align-items:center;gap:12px;min-width:280px;max-width:min(92vw,420px);
+  padding:14px 18px;border-radius:var(--shape-xs);
+  background:var(--inverse-surface);color:var(--inverse-on-surface);font-size:.875rem;
+  box-shadow:var(--elev-3);
+  opacity:0;transform:translate(-50%,20px);pointer-events:none;
+  transition:opacity var(--motion-medium1) var(--ease-standard),transform var(--motion-medium2) var(--ease-emphasized-decel);
+}
+.snackbar.is-visible{opacity:1;transform:translate(-50%,0)}
+.snackbar .icon{width:20px;height:20px;flex:none;color:var(--inverse-primary)}
+.snackbar span{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow-wrap:anywhere}
+
+/* ---------- 页脚 ---------- */
+.footer{background:var(--surface-container-low);border-top:1px solid var(--outline-variant);padding-block:clamp(40px,6vw,64px)}
+.footer__grid{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:clamp(24px,4vw,48px)}
+.footer h4{font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--on-surface-variant);margin-bottom:14px}
+.footer ul{display:flex;flex-direction:column;gap:10px}
+.footer a{color:var(--on-surface);font-size:.9375rem;display:inline-flex;align-items:center;gap:8px}
+.footer a:hover{color:var(--primary)}
+.footer__bottom{margin-top:clamp(28px,4vw,44px);padding-top:22px;border-top:1px solid var(--outline-variant);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.8125rem;color:var(--on-surface-variant)}
+.footer__bottom p{max-width:70ch}
+
+/* ---------- 数据流示意 ---------- */
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.flow__arrow{display:inline-flex;flex-direction:column;align-items:center;gap:0;color:var(--primary);min-width:96px}
+.flow__arrow .icon{width:46px;height:20px}
+.flow__arrow em{font-style:normal;font-size:.6875rem;font-weight:700;letter-spacing:.02em;color:var(--on-surface-variant);white-space:nowrap}
+
+/* ---------- 收尾 CTA ---------- */
+.cta{
+  position:relative;overflow:hidden;isolation:isolate;
+  border-radius:clamp(24px,4vw,40px);
+  background:var(--primary-container);color:var(--on-primary-container);
+  padding:clamp(34px,6vw,68px) clamp(20px,4vw,48px);text-align:center;
+  transition:background-color var(--motion-medium1) var(--ease-standard),color var(--motion-medium1) var(--ease-standard);
+}
+.cta__glow{
+  position:absolute;inset:-40% -20%;z-index:-1;
+  background:
+    radial-gradient(45% 55% at 22% 25%,color-mix(in srgb,var(--tertiary-container) 85%,transparent),transparent 68%),
+    radial-gradient(45% 55% at 78% 70%,color-mix(in srgb,var(--secondary-container) 85%,transparent),transparent 68%);
+  animation:sheen 14s var(--ease-standard) infinite alternate;
+}
+
+/* ---------- 滚动进场 ---------- */
+.reveal{opacity:0;transform:translateY(22px)}
+.reveal.is-in{opacity:1;transform:none;transition:opacity var(--motion-long2) var(--ease-emphasized-decel),transform var(--motion-long2) var(--ease-emphasized-decel)}
+@keyframes fade-up{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1080px){
+  .hero__grid{grid-template-columns:minmax(0,1fr)}
+  .stage{order:-1;max-width:620px;margin-inline:auto;width:100%}
+  .split{grid-template-columns:minmax(0,1fr)}
+  .split--reverse .split__aside{order:0}
+  .preview-composite{max-width:92vw}
+}
+@media (max-width:900px){
+  .preview-composite{max-width:100%}
+  .shot--phone{right:2%}
+  .shot__badge{height:28px;padding:0 10px;font-size:.6875rem}
+  .shot--phone .shot__badge{height:24px;left:6px;bottom:6px}
+  .preview-cards{grid-template-columns:1fr}
+}
+@media (max-width:860px){
+  #menuBtn{display:inline-flex}
+  .nav{display:none}
+  .nav--mobile{display:flex;flex-direction:column;position:absolute;left:var(--gutter);right:var(--gutter);top:calc(var(--bar-h) - 6px);background:var(--surface-container);border-radius:var(--shape-xl);padding:10px;gap:2px;box-shadow:var(--elev-2);transform-origin:top center;z-index:120}
+  .nav--mobile a{height:48px;font-size:1rem;border-radius:var(--shape-full)}
+  .nav--mobile[data-open="false"]{display:none}
+  .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .footer__brand{grid-column:1/-1}
+}
+
+@media (max-width:560px){
+  :root{--bar-h:60px}
+  .window__body{grid-template-columns:minmax(0,1fr)}
+  .mock-side{flex-direction:row;align-items:center;justify-content:space-between;border-right:0;border-bottom:1px solid var(--outline-variant);padding:10px}
+  .mock-side__brand{padding:0 8px}
+  .mock-side .mock-nav:not(.is-active){display:none}
+  .float-chip--a{left:0}
+  .float-chip--b{right:0}
+  .footer__grid{grid-template-columns:minmax(0,1fr)}
+  .fab{height:52px;font-size:.875rem}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+  .reveal{opacity:1;transform:none}
+}
+</style>
+<style>
+@font-face {
+    font-family: 'Nebulove';
+    src: url('https://nebulove.92li.uk/Nebulove.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+</style>
+<noscript>
+  <style>
+    .reveal{opacity:1;transform:none}
+    .tabpanel[hidden]{display:block!important;margin-top:24px}
+    .tabs{display:none}
+  </style>
+</noscript>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="ic-bolt" viewBox="0 0 24 24" fill="currentColor"><path d="M13.9 2.2 4.6 13.4c-.3.4 0 .9.4.9h5.2l-1 7.2c-.1.5.6.8.9.4l9.3-11.2c.3-.4 0-.9-.4-.9h-5.2l1-7.2c.1-.5-.6-.8-.9-.4z"/></symbol>
+    <symbol id="ic-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 5.2 5.9v5.6c0 4.1 2.9 7.5 6.8 9.1 3.9-1.6 6.8-5 6.8-9.1V5.9z"/><path d="M12 11.2v3.1"/><circle cx="12" cy="9.4" r="1.5"/></symbol>
+    <symbol id="ic-wifi-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.2 9.1a15.4 15.4 0 0 1 5.3-2.9M15.6 6.2a15.4 15.4 0 0 1 5.2 2.9"/><path d="M6.7 12.7a10 10 0 0 1 2.8-1.3M14.6 11.4a10 10 0 0 1 2.7 1.3"/><path d="M9.9 16.1a4.6 4.6 0 0 1 4.2 0"/><circle cx="12" cy="19.6" r="1.1" fill="currentColor" stroke="none"/><path d="M3.6 3.4 20.4 20.6"/></symbol>
+    <symbol id="ic-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9.2 4.4H7.6A2.1 2.1 0 0 0 5.5 6.5v11.4a2.1 2.1 0 0 0 2.1 2.1h8.8a2.1 2.1 0 0 0 2.1-2.1V6.5a2.1 2.1 0 0 0-2.1-2.1h-1.6"/><rect x="9.2" y="2.9" width="5.6" height="3.4" rx="1.5"/><path d="M8.9 11.4h6.2M8.9 15h4.1"/></symbol>
+    <symbol id="ic-devices" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="4.3" width="12.6" height="9.1" rx="2.1"/><path d="M6.2 17.2h5.4M8.9 13.4v3.8"/><rect x="16.6" y="8.6" width="4.8" height="11.1" rx="1.9"/><path d="M18.6 17.4h.9"/></symbol>
+    <symbol id="ic-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8.8 7.8 4.6 12l4.2 4.2M15.2 7.8 19.4 12l-4.2 4.2"/></symbol>
+    <symbol id="ic-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.4v11.2m0 0 4-4m-4 4-4-4M4.6 19.4h14.8"/></symbol>
+    <symbol id="ic-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.3 14.7 9l6.2.8-4.6 4.3 1.2 6.2L12 17.4 6.5 20.3l1.2-6.2L3.1 9.8 9.3 9z"/></symbol>
+    <symbol id="ic-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.3C7.2 3.3 3.3 6.9 3.3 11.3c0 4.4 3.9 8 8.7 8 1.2 0 2.1-.8 2.1-1.9 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.1 0-1 .8-1.8 1.9-1.8h1.4c2.3 0 4.3-1.9 4.3-4.2 0-3.5-3.5-5.8-8.7-5.8z"/><circle cx="7.8" cy="10" r="1.2" fill="currentColor" stroke="none"/><circle cx="11.4" cy="7.4" r="1.2" fill="currentColor" stroke="none"/><circle cx="15.6" cy="9.3" r="1.2" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="ic-brightness" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2.1M12 19.1v2.1M2.8 12h2.1M19.1 12h2.1M5.5 5.5 7 7M17 17l1.5 1.5M18.5 5.5 17 7M7 17l-1.5 1.5"/></symbol>
+    <symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="ic-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19.2V5.2m0 0-5.8 5.8M12 5.2l5.8 5.8"/></symbol>
+    <symbol id="ic-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 12h14m0 0-5.6-5.6M18.8 12 13.2 17.6"/></symbol>
+    <symbol id="ic-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 12.6 9.8 17.6 19.3 6.6"/></symbol>
+    <symbol id="ic-check-circle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.4A9.6 9.6 0 1 0 21.6 12 9.6 9.6 0 0 0 12 2.4zm4.7 7.2-5.6 6.2a1 1 0 0 1-1.5 0L7.3 13.4a1 1 0 0 1 1.5-1.4l1.6 1.7 4.9-5.4a1 1 0 0 1 1.4 1.3z"/></symbol>
+    <symbol id="ic-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9.1"/><path d="M12 11v5.4"/><circle cx="12" cy="7.9" r="1.15" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="ic-send" viewBox="0 0 24 24" fill="currentColor"><path d="M3.6 20.4 21.2 12 3.6 3.6l.1 6.5 12.2 1.9-12.2 1.9z"/></symbol>
+    <symbol id="ic-inbox" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.6 13.6 6.2 5.5a1.6 1.6 0 0 1 1.5-1.1h8.6a1.6 1.6 0 0 1 1.5 1.1l2.6 8.1v4.1a2 2 0 0 1-2 2H5.6a2 2 0 0 1-2-2z"/><path d="M3.6 13.6h4.3l.9 2.4h6.4l.9-2.4h4.3"/></symbol>
+    <symbol id="ic-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="10.4" cy="11.8" r="3.2"/><path d="M19.1 14.6a7.7 7.7 0 0 0 0-5.2l1.7-1.3-1.9-3.3-2 .8a7.7 7.7 0 0 0-4.5-2.6L12 1.1h-3.8L7.6 3a7.7 7.7 0 0 0-4.5 2.6l-2-.8L-.8 8.1 1 9.4a7.7 7.7 0 0 0 0 5.2L-.8 15.9l1.9 3.3 2-.8a7.7 7.7 0 0 0 4.5 2.6l.6 1.9H12l.6-1.9a7.7 7.7 0 0 0 4.5-2.6l2 .8 1.9-3.3z" transform="translate(0 0) scale(0.86) translate(1.9 1.9)"/></symbol>
+    <symbol id="ic-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="6.6" y="2.6" width="10.8" height="18.8" rx="2.9"/><path d="M10.6 18.6h2.8"/></symbol>
+    <symbol id="ic-desktop" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.7" y="4.4" width="18.6" height="11.9" rx="2.3"/><path d="M8.2 20.4h7.6M12 16.3v4.1"/></symbol>
+    <symbol id="ic-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M14.2 4.6h5.2v5.2M19 5l-7.6 7.6"/><path d="M18.6 14.4v3.7a2.1 2.1 0 0 1-2.1 2.1H6.7a2.1 2.1 0 0 1-2.1-2.1V8.3a2.1 2.1 0 0 1 2.1-2.1h3.7"/></symbol>
+    <symbol id="ic-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="4.2" width="18.4" height="15.6" rx="2.4"/><path d="M7 9.5 9.9 12 7 14.5M12.6 15h4.4"/></symbol>
+    <symbol id="ic-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="8.4" y="8.4" width="11.8" height="11.8" rx="2.4"/><path d="M15.6 5.6a2.4 2.4 0 0 0-2.4-2.4H6.2a2.4 2.4 0 0 0-2.4 2.4v7a2.4 2.4 0 0 0 2.4 2.4"/></symbol>
+    <symbol id="ic-gauge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.9 18.3a9 9 0 1 1 16.2 0"/><path d="M12 14.2l4.4-4.1"/><circle cx="12" cy="15.4" r="1.3" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="ic-wifi" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.4 9.2a13.4 13.4 0 0 1 17.2 0"/><path d="M6.9 12.8a8.5 8.5 0 0 1 10.2 0"/><path d="M10.1 16.2a3.6 3.6 0 0 1 3.8 0"/><circle cx="12" cy="19.4" r="1.15" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="ic-file" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M13.2 3.4H7.6a2.2 2.2 0 0 0-2.2 2.2v12.8a2.2 2.2 0 0 0 2.2 2.2h8.8a2.2 2.2 0 0 0 2.2-2.2V8.4z"/><path d="M13.2 3.4v5h5.4M8.9 13.4h6.2M8.9 16.4h3.6"/></symbol>
+    <symbol id="ic-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3.4 7.3A3.1 3.1 0 0 1 6.5 4.2h2.9l2 2.4h6.1a3.1 3.1 0 0 1 3.1 3.1v6.9a3.1 3.1 0 0 1-3.1 3.1H6.5a3.1 3.1 0 0 1-3.1-3.1z"/></symbol>
+    <symbol id="ic-text" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 6.6h14.8M4.6 11h14.8M4.6 15.4h9.2"/></symbol>
+    <symbol id="ic-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20.2s-7.6-4.4-7.6-9.4a4.3 4.3 0 0 1 7.6-2.8 4.3 4.3 0 0 1 7.6 2.8c0 5-7.6 9.4-7.6 9.4z"/></symbol>
+    <symbol id="ic-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20.2 11.4a8.3 8.3 0 0 0-14.4-4.3L3.6 9.4"/><path d="M3.8 12.6a8.3 8.3 0 0 0 14.4 4.3l2.2-2.3"/><path d="M3.6 4.9v4.5h4.5M20.4 19.1v-4.5h-4.5"/></symbol>
+    <symbol id="ic-router" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="13.4" width="18.8" height="7.2" rx="2.3"/><path d="M6.4 17h.1M9.6 17h.1M12.9 17h.1"/><path d="M12 10.4V9M8.6 6.2a5 5 0 0 1 6.8 0"/></symbol>
+    <symbol id="ic-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.6l1.9 5.6 5.6 1.9-5.6 1.9L12 17.6l-1.9-5.6L4.5 10.1l5.6-1.9z"/><path d="M18.6 15.2l.9 2.6 2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></symbol>
+    <symbol id="ic-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.2 3.4 7.6 12 12l8.6-4.4z"/><path d="M3.4 12.4 12 16.8l8.6-4.4M3.4 16.6 12 21l8.6-4.4"/></symbol>
+    <symbol id="ic-mark" viewBox="0 0 100 100" fill="currentColor"><circle cx="50" cy="50" r="20.6"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8" transform="rotate(45 50 50)"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8" transform="rotate(90 50 50)"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8" transform="rotate(135 50 50)"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8" transform="rotate(180 50 50)"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8" transform="rotate(225 50 50)"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8" transform="rotate(270 50 50)"/><rect x="39.2" y="10.8" width="21.6" height="9.6" rx="4.8" transform="rotate(315 50 50)"/></symbol>
+  </defs>
+</svg>
+
+<!-- ===== 顶栏 ===== -->
+<header class="app-bar" id="appbar">
+  <div class="wrap app-bar__inner">
+    <a class="brand" href="#top" aria-label="YiDrop 首页">
+      <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#ic-mark"/></svg></span>
+      <span>YiDrop<span class="brand__sub" style="display:block">局域网直传小工具</span></span>
+    </a>
+
+    <nav class="nav" id="nav" aria-label="页面导航">
+      <a href="#features">功能</a>
+      <a href="#how">工作原理</a>
+      <a href="#preview">界面</a>
+      <a href="#download">下载</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+
+    <div class="app-bar__actions">
+      <button class="icon-btn" id="paletteBtn" aria-haspopup="true" aria-expanded="false" aria-label="更换主题配色（Material You 种子色）" title="更换配色">
+        <svg class="icon" aria-hidden="true"><use href="#ic-palette"/></svg>
+      </button>
+      <button class="icon-btn" id="themeBtn" aria-haspopup="true" aria-expanded="false" aria-label="切换明暗模式" title="明暗模式">
+        <svg class="icon" aria-hidden="true"><use href="#ic-brightness"/></svg>
+      </button>
+      <button class="icon-btn" id="menuBtn" aria-expanded="false" aria-label="打开导航菜单">
+        <svg class="icon" aria-hidden="true"><use href="#ic-menu"/></svg>
+      </button>
+
+      <div class="menu" id="paletteMenu" role="menu" aria-label="种子色" data-open="false">
+        <p class="menu__label">Material You 种子色</p>
+        <button class="menu__item" role="menuitemradio" data-palette="teal" aria-checked="true"><span class="swatch" style="background:#008080"></span>湖畔青（品牌色）</button>
+        <button class="menu__item" role="menuitemradio" data-palette="indigo" aria-checked="false"><span class="swatch" style="background:#1a56db"></span>靛蓝</button>
+        <button class="menu__item" role="menuitemradio" data-palette="violet" aria-checked="false"><span class="swatch" style="background:#6d4ae0"></span>紫罗兰</button>
+        <button class="menu__item" role="menuitemradio" data-palette="rose" aria-checked="false"><span class="swatch" style="background:#c2185b"></span>山茶玫瑰</button>
+        <button class="menu__item" role="menuitemradio" data-palette="amber" aria-checked="false"><span class="swatch" style="background:#c25e12"></span>琥珀</button>
+      </div>
+
+      <div class="menu" id="themeMenu" role="menu" aria-label="明暗模式" data-open="false">
+        <p class="menu__label">外观</p>
+        <button class="menu__item" role="menuitemradio" data-theme-value="system" aria-checked="true"><svg class="icon" aria-hidden="true"><use href="#ic-sparkle"/></svg>跟随系统</button>
+        <button class="menu__item" role="menuitemradio" data-theme-value="light" aria-checked="false"><svg class="icon" aria-hidden="true"><use href="#ic-brightness"/></svg>浅色</button>
+        <button class="menu__item" role="menuitemradio" data-theme-value="dark" aria-checked="false"><svg class="icon" aria-hidden="true"><use href="#ic-shield"/></svg>深色</button>
+      </div>
+
+      <nav class="nav nav--mobile" id="navMobile" data-open="false" aria-label="移动端导航">
+        <a href="#features">功能</a>
+        <a href="#how">工作原理</a>
+        <a href="#preview">界面</a>
+        <a href="#download">下载</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===== 首屏 ===== -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"><span class="blob blob--1"></span><span class="blob blob--2"></span><span class="blob blob--3"></span></div>
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <span class="hero__pill">Made with ❤️ by lingyicute</span>
+        <h1 class="t-display">纯局域网空投，<br><span class="grad">没别的，就是快</span></h1>
+        <p class="hero__lede">YiDrop 是一个好玩又好用的跨平台应用，帮你在同一个局域网里快速、安全地互传文件、文件夹、文字和剪贴板内容 —— 不用数据线，不用云盘，不用登录账号。</p>
+        <div class="hero__cta">
+          <a class="btn btn--filled btn--large" href="#download"><svg class="icon" aria-hidden="true"><use href="#ic-download"/></svg>下载 YiDrop</a>
+          <a class="btn btn--outlined btn--large" href="https://github.com/lingyicute/YiDrop" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#ic-star"/></svg>在 GitHub 上查看</a>
+        </div>
+        <div class="hero__meta">
+          <span><svg class="icon" aria-hidden="true"><use href="#ic-wifi-off"/></svg>无需互联网</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#ic-shield"/></svg>加密传输</span>
+          <span><svg class="icon" aria-hidden="true"><use href="#ic-phone"/></svg>Android 5.0+ · Windows 10+</span>
+        </div>
+      </div>
+
+      <div class="stage">
+        <div class="window" aria-hidden="true">
+          <div class="window__bar">
+            <span class="window__dots"><i></i><i></i><i></i></span>
+            <span class="window__title">YiDrop</span>
+          </div>
+          <div class="window__body">
+            <div class="mock-side">
+              <div class="mock-side__brand">YiDrop</div>
+              <div class="mock-nav"><svg class="icon"><use href="#ic-inbox"/></svg>接收</div>
+              <div class="mock-nav is-active"><svg class="icon"><use href="#ic-send"/></svg>发送</div>
+              <div class="mock-nav"><svg class="icon"><use href="#ic-settings"/></svg>设置</div>
+            </div>
+            <div class="mock-main">
+              <p class="mock-label">已选项目</p>
+              <div class="mock-actions">
+                <div class="mock-action"><svg class="icon"><use href="#ic-file"/></svg>文件</div>
+                <div class="mock-action"><svg class="icon"><use href="#ic-folder"/></svg>文件夹</div>
+                <div class="mock-action"><svg class="icon"><use href="#ic-text"/></svg>文本</div>
+                <div class="mock-action"><svg class="icon"><use href="#ic-clipboard"/></svg>剪贴板</div>
+              </div>
+              <p class="mock-label">附近的设备</p>
+              <div class="mock-device">
+                <span class="mock-device__icon"><svg class="icon"><use href="#ic-phone"/></svg></span>
+                <span>
+                  <span class="mock-device__name">可爱的柠檬</span>
+                  <span class="mock-device__tags"><span class="mock-tag">#175</span><span class="mock-tag">Redmi</span></span>
+                </span>
+                <span class="heart"><svg class="icon"><use href="#ic-heart"/></svg></span>
+              </div>
+              <div class="mock-progress">
+                <div class="mock-progress__head"><span>正在发送 · 3 个文件</span><span>HTTPS 加密</span></div>
+                <div class="bar"><span class="bar__fill"></span></div>
+                <div class="mock-progress__stats"><span>文件 <b>3 / 3</b></span><span>大小 <b>2.2 MB</b></span><span>速度 <b>2.1 MB/s</b></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="float-chip float-chip--a" aria-hidden="true"><svg class="icon"><use href="#ic-gauge"/></svg>跑满本地带宽</span>
+        <span class="float-chip float-chip--b" aria-hidden="true"><svg class="icon"><use href="#ic-shield"/></svg>动态 TLS</span>
+        <span class="float-chip float-chip--c" aria-hidden="true"><svg class="icon"><use href="#ic-router"/></svg>局域网传输，数据不上传</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 功能 ===== -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">功能</span>
+        <h2 class="t-headline">把「传个文件」这件事，做到不用思考</h2>
+        <p class="t-body muted" style="margin-top:14px">不需要设备配对码，不需要复制粘贴链接，也不需要在两台设备上装同一个云盘客户端。打开就能看到对方，点一下就开始传。</p>
+      </div>
+
+      <div class="grid features">
+        <article class="surface-card surface-card--interactive feature reveal">
+          <span class="feature__icon"><svg class="icon"><use href="#ic-bolt"/></svg></span>
+          <h3>局域网直连，跑满带宽</h3>
+          <p>同一 Wi-Fi 下点对点传输，数据包不经过任何第三方服务器，千兆局域网里能跑到硬盘和网卡的极限。</p>
+          <span class="feature__tag">点对点 · 零中转</span>
+        </article>
+
+        <article class="surface-card surface-card--interactive feature reveal">
+          <span class="feature__icon"><svg class="icon"><use href="#ic-shield"/></svg></span>
+          <h3>端到端加密</h3>
+          <p>所有通信都走 HTTPS，TLS/SSL 证书在每台设备上动态生成 —— 一次一证，用完即弃，不用信任任何人。</p>
+          <span class="feature__tag">HTTPS · 自签证书</span>
+        </article>
+
+        <article class="surface-card surface-card--interactive feature reveal">
+          <span class="feature__icon"><svg class="icon"><use href="#ic-wifi-off"/></svg></span>
+          <h3>完全离线可用</h3>
+          <p>没有互联网也能用：断网的路由器、离线的工作环境、出差的酒店内网，只要两台设备在同一网段就行。</p>
+          <span class="feature__tag">无账号 · 无遥测</span>
+        </article>
+
+        <article class="surface-card surface-card--interactive feature reveal">
+          <span class="feature__icon"><svg class="icon"><use href="#ic-clipboard"/></svg></span>
+          <h3>文件、文件夹、文字都行</h3>
+          <p>照片、视频、安装包、整个文件夹，或者一段纯文本、一条剪贴板内容，都可以直接丢给对面的设备。</p>
+          <span class="feature__tag">多种发送类型</span>
+        </article>
+
+        <article class="surface-card surface-card--interactive feature reveal">
+          <span class="feature__icon"><svg class="icon"><use href="#ic-devices"/></svg></span>
+          <h3>跨平台互通</h3>
+          <p>Android 与 Windows 已提供现成安装包；Linux 与 macOS 的构建目标也已就绪，可自行编译。</p>
+          <span class="feature__tag">手机 ⇄ 电脑</span>
+        </article>
+
+        <article class="surface-card surface-card--interactive feature reveal">
+          <span class="feature__icon"><svg class="icon"><use href="#ic-code"/></svg></span>
+          <h3>开源、免费、没有套路</h3>
+          <p>代码全部公开，无广告、无追踪、无会员墙。想改哪里就 fork 哪里，想加什么就提 PR。</p>
+          <span class="feature__tag">Apache-2.0 许可</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 工作原理 ===== -->
+  <section class="section" id="how">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">工作原理</span>
+        <h2 class="t-headline">四次握手，剩下的交给局域网</h2>
+        <p class="t-body muted" style="margin-top:14px">YiDrop 使用一套轻量的 REST 协议在设备之间通信：发现、握手、确认、传输，全程加密，全程可中断。</p>
+      </div>
+
+      <div class="split">
+        <ol class="steps">
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>发现附近设备</h3>
+              <p>应用启动后在局域网内广播并扫描，自动列出正在等待接收的设备。不需要输入 IP，也不需要配对码。</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>建立加密通道</h3>
+              <p>两台设备各自动态生成 TLS/SSL 证书，通过 HTTPS 建立连接。传输内容只有发送方和接收方能看到。</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>对方确认接收</h3>
+              <p>接收端会看到发送方名称与文件清单，可以选择接受、逐个挑选，或者直接拒绝。</p>
+            </div>
+          </li>
+          <li class="step reveal">
+            <div class="step__body">
+              <h3>直连传输并实时显示进度</h3>
+              <p>文件从一端直接流向另一端，界面实时显示文件名、总大小与当前速度，随时可以取消。</p>
+            </div>
+          </li>
+        </ol>
+
+        <aside class="split__aside">
+          <div class="surface-card surface-card--flat reveal">
+            <h3 class="t-title" style="margin-bottom:6px">两台设备之间发生了什么</h3>
+            <p class="t-body-sm muted">一次典型的文件传输，链路大概是这样：</p>
+            <div class="flow" style="margin:18px 0 22px">
+              <span class="chip chip--accent"><svg class="icon"><use href="#ic-phone"/></svg>设备 A</span>
+              <span class="flow__arrow"><svg class="icon"><use href="#ic-arrow-right"/></svg><em>HTTPS · 59420</em></span>
+              <span class="chip chip--accent"><svg class="icon"><use href="#ic-desktop"/></svg>设备 B</span>
+            </div>
+            <div class="note" style="margin-bottom:18px">
+              <svg class="icon"><use href="#ic-info"/></svg>
+              <p><b>只有一个端口需要放行。</b>如果收不到文件，先看防火墙是否允许 TCP/UDP 59420 的传入连接，并确认路由器上的 AP 隔离已关闭。</p>
+            </div>
+            <div class="table-wrap" style="margin-top:4px">
+              <table>
+                <caption>防火墙放行规则</caption>
+                <thead><tr><th scope="col">流量方向</th><th scope="col">协议</th><th scope="col">端口</th><th scope="col">操作</th></tr></thead>
+                <tbody>
+                  <tr><th scope="row">传入</th><td>TCP, UDP</td><td><b>59420</b></td><td>允许</td></tr>
+                  <tr><th scope="row">传出</th><td>TCP, UDP</td><td>任意</td><td>允许</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 界面预览 ===== -->
+  <section class="section" id="preview">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">界面</span>
+        <h2 class="t-headline">手机上随手一丢，电脑上接着干</h2>
+        <p class="t-body muted" style="margin-top:14px">移动端与桌面端共享同一套交互逻辑：左边选发送或接收，右侧看到附近设备与实时进度。</p>
+      </div>
+
+      <div class="previews">
+        <div class="preview-shots">
+          <div class="preview-composite">
+            <figure class="shot shot--desktop reveal">
+              <img src="https://drop.92li.uk/img/screenshot-pc.webp" alt="YiDrop Windows" width="1600" height="930" loading="lazy" decoding="async">
+              <span class="shot__badge"><svg class="icon" aria-hidden="true"><use href="#ic-desktop"/></svg>Windows</span>
+            </figure>
+            <figure class="shot shot--phone reveal">
+              <img src="https://drop.92li.uk/img/yidrop.webp" alt="YiDrop Android" width="640" height="1367" loading="lazy" decoding="async">
+              <span class="shot__badge"><svg class="icon" aria-hidden="true"><use href="#ic-phone"/></svg>Android</span>
+            </figure>
+          </div>
+        </div>
+        <div class="preview-cards">
+          <div class="surface-card surface-card--flat reveal">
+            <h3 class="t-subtitle" style="margin-bottom:8px">发送</h3>
+            <p class="t-body-sm muted">选择文件、文件夹、文本或剪贴板，再从附近设备里点一个目标即可。</p>
+          </div>
+          <div class="surface-card surface-card--flat reveal">
+            <h3 class="t-subtitle" style="margin-bottom:8px">接收</h3>
+            <p class="t-body-sm muted">接收前可以预览清单，还能设置默认保存位置与自动接受策略。</p>
+          </div>
+          <div class="surface-card surface-card--flat reveal">
+            <h3 class="t-subtitle" style="margin-bottom:8px">历史</h3>
+            <p class="t-body-sm muted">已收发的记录留在本地，方便回头再找一次刚才那个文件。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 下载 ===== -->
+  <section class="section" id="download">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">下载</span>
+        <h2 class="t-headline">选你的平台，装完就能用</h2>
+        <p class="t-body muted" style="margin-top:14px">最新版本 <b id="dlVersion" style="color:var(--primary)">v1.17.4</b>（发布于 2025-02-06）· 所有安装包都托管在 GitHub Releases，长期可用。</p>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="选择平台">
+        <button class="tab" role="tab" id="tab-android" aria-controls="panel-android" aria-selected="true">
+          <svg class="icon" aria-hidden="true"><use href="#ic-phone"/></svg>Android
+        </button>
+        <button class="tab" role="tab" id="tab-windows" aria-controls="panel-windows" aria-selected="false" tabindex="-1">
+          <svg class="icon" aria-hidden="true"><use href="#ic-desktop"/></svg>Windows
+        </button>
+        <button class="tab" role="tab" id="tab-other" aria-controls="panel-other" aria-selected="false" tabindex="-1">
+          <svg class="icon" aria-hidden="true"><use href="#ic-terminal"/></svg>Linux / macOS
+        </button>
+      </div>
+
+      <div class="tabpanel" id="panel-android" role="tabpanel" aria-labelledby="tab-android" tabindex="0">
+        <div class="dl-grid">
+          <a class="surface-card surface-card--interactive dl" href="https://github.com/lingyicute/YiDrop/releases/download/v1.17.4/YiDrop_arm64-v8a_opt.apk">
+            <span class="dl__top">
+              <span class="dl__icon"><svg class="icon"><use href="#ic-phone"/></svg></span>
+              <span><span class="dl__name">arm64-v8a YiDrop_arm64-v8a_opt.apk</span></span>
+            </span>
+            <span class="t-body-sm muted">绝大多数 2017 年之后发布的手机和平板选这个。</span>
+            <span class="dl__foot">下载 APK<svg class="icon"><use href="#ic-arrow-right"/></svg></span>
+          </a>
+          <a class="surface-card surface-card--interactive dl" href="https://github.com/lingyicute/YiDrop/releases/download/v1.17.4/YiDrop_armeabi-v7a_opt.apk">
+            <span class="dl__top">
+              <span class="dl__icon"><svg class="icon"><use href="#ic-phone"/></svg></span>
+              <span><span class="dl__name">armeabi-v7a YiDrop_armeabi-v7a_opt.apk</span></span>
+            </span>
+            <span class="t-body-sm muted">面向较老的 32 位设备。安装前请确认系统版本为 Android 5.0 及以上。</span>
+            <span class="dl__foot">下载 APK<svg class="icon"><use href="#ic-arrow-right"/></svg></span>
+          </a>
+          <a class="surface-card surface-card--interactive dl" href="https://github.com/lingyicute/YiDrop/releases/download/v1.17.4/YiDrop_x86_64_opt.apk">
+            <span class="dl__top">
+              <span class="dl__icon"><svg class="icon"><use href="#ic-phone"/></svg></span>
+              <span><span class="dl__name">x86_64 YiDrop_x86_64_opt.apk</span></span>
+            </span>
+            <span class="t-body-sm muted">模拟器、部分 x86 平板与安卓子系统使用。</span>
+            <span class="dl__foot">下载 APK<svg class="icon"><use href="#ic-arrow-right"/></svg></span>
+          </a>
+        </div>
+        <div class="note" style="margin-top:18px">
+          <svg class="icon"><use href="#ic-info"/></svg>
+          <p><b>系统要求：</b>Android 5.0（API 21）及以上。首次安装需要在系统设置里允许「安装未知来源应用」，这是侧载 APK 的标准流程。</p>
+        </div>
+      </div>
+
+      <div class="tabpanel" id="panel-windows" role="tabpanel" aria-labelledby="tab-windows" tabindex="0" hidden>
+        <div class="dl-grid">
+          <a class="surface-card surface-card--interactive dl" href="https://github.com/lingyicute/YiDrop/releases/download/v1.17.4/YiDrop-Installer.exe">
+            <span class="dl__top">
+              <span class="dl__icon"><svg class="icon"><use href="#ic-desktop"/></svg></span>
+              <span><span class="dl__name">Windows 安装包 YiDrop-Installer.exe</span></span>
+            </span>
+            <span class="t-body-sm muted">安装到系统目录并创建开始菜单快捷方式。要求 Windows 10 及以上（64 位）。</span>
+            <span class="dl__foot">下载安装包<svg class="icon"><use href="#ic-arrow-right"/></svg></span>
+          </a>
+          <div class="surface-card">
+            <span class="dl__top">
+              <span class="dl__icon"><svg class="icon"><use href="#ic-folder"/></svg></span>
+              <span><span class="dl__name">便携模式 settings.json</span></span>
+            </span>
+            <p class="t-body-sm muted">在可执行文件同目录新建一个名为 <code>settings.json</code> 的文件（可以为空），YiDrop 就会把设置写在这里，而不是系统目录 —— 塞进 U 盘就能随身带着走。</p>
+          </div>
+          <div class="surface-card">
+            <span class="dl__top">
+              <span class="dl__icon"><svg class="icon"><use href="#ic-terminal"/></svg></span>
+              <span><span class="dl__name">开机藏进托盘 --hidden</span></span>
+            </span>
+            <p class="t-body-sm muted">加上 <code>--hidden</code> 启动参数，YiDrop 会直接最小化到系统托盘，静静等你把文件丢过来。</p>
+          </div>
+        </div>
+        <div class="note" style="margin-top:18px">
+          <svg class="icon"><use href="#ic-info"/></svg>
+          <p><b>看不到其他设备？</b>把当前网络配置改成「专用网络」。Windows 在「公用网络」下会施加更严格的入站限制。</p>
+        </div>
+      </div>
+
+      <div class="tabpanel" id="panel-other" role="tabpanel" aria-labelledby="tab-other" tabindex="0" hidden>
+        <div class="split">
+          <div>
+            <div class="surface-card">
+              <h3 class="t-subtitle" style="margin-bottom:10px">从源码构建</h3>
+              <p class="t-body-sm muted" style="margin-bottom:16px">仓库使用 Flutter（配合 fvm 锁定 3.24.5）与 Rust 工具链，克隆时记得带上子模块。</p>
+              <div class="code">
+                <button class="icon-btn code__copy" data-copy="#buildCmd" aria-label="复制构建命令"><svg class="icon" aria-hidden="true"><use href="#ic-copy"/></svg></button>
+                <pre id="buildCmd"><span class="cmt"># 1. 克隆项目（含子模块）</span>
+<span class="cmd">git clone --recursive</span> https://github.com/lingyicute/YiDrop.git
+<span class="cmd">cd</span> YiDrop
+
+<span class="cmt"># 2. 拉取依赖</span>
+<span class="cmd">fvm</span> flutter pub get
+
+<span class="cmt"># 3. 按平台构建</span>
+<span class="cmd">fvm</span> flutter build windows <span class="cmt">--release</span>
+<span class="cmd">fvm</span> flutter build linux   <span class="cmt">--release</span>
+<span class="cmd">fvm</span> flutter build macos   <span class="cmt">--release</span>
+
+<span class="cmt"># 4. 命令行客户端（可选）</span>
+<span class="cmd">cd</span> cli &amp;&amp; <span class="cmd">dart</span> pub get</pre>
+              </div>
+            </div>
+          </div>
+          <aside class="split__aside">
+            <div class="surface-card surface-card--flat" style="margin-bottom:16px">
+              <h3 class="t-subtitle" style="margin-bottom:8px">各平台构建目标</h3>
+              <p class="t-body-sm muted">仓库中同时保留了 Android、Windows、Linux 与 macOS 四个平台的工程目录，另外还有一个独立的命令行客户端（<code>cli/</code>），适合在服务器或脚本里收发文件。</p>
+            </div>
+            <a class="btn btn--tonal btn--large" style="width:100%" href="https://github.com/lingyicute/YiDrop" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#ic-external"/></svg>前往仓库查看构建文档
+            </a>
+          </aside>
+        </div>
+      </div>
+
+      <div class="surface-card surface-card--flat reveal" style="margin-top:24px;display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+        <div>
+          <h3 class="t-subtitle">想看全部版本、更新日志和校验文件？</h3>
+          <p class="t-body-sm muted" style="margin-top:6px">每个版本的安装包、Release Notes 与历史版本都在 GitHub Releases 页面上。</p>
+        </div>
+        <div style="display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn--filled" href="https://github.com/lingyicute/YiDrop/releases/latest" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#ic-download"/></svg>最新版本</a>
+          <a class="btn btn--outlined" href="https://github.com/lingyicute/YiDrop/releases" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#ic-layers"/></svg>全部版本</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 常见问题 ===== -->
+  <section class="section" id="faq">
+    <div class="wrap">
+      <div class="split">
+        <div>
+          <div class="section-head" style="margin-bottom:24px">
+            <span class="eyebrow">常见问题</span>
+            <h2 class="t-headline">出问题的时候，先看这里</h2>
+          </div>
+          <div class="accordion" id="accordion">
+            <details class="acc" open>
+              <summary>找不到附近的设备怎么办？</summary>
+              <div class="acc__body">
+                <p><b>第一步：关掉路由器的 AP 隔离。</b>多数路由器默认是关闭的，但访客网络通常打开。AP 隔离一开，同一 Wi-Fi 下的设备就互相看不见。</p>
+                <p><b>第二步：确认在同一个网段。</b>5GHz 与 2.4GHz 如果被路由器拆成了两个独立网络，也会导致互相发现不了；双频合一的 SSID 一般没问题。</p>
+                <p><b>第三步（Windows）：</b>把网络配置成「专用网络」，公用网络配置下系统会限制入站连接。</p>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>传输速度很慢，怎么提速？</summary>
+              <div class="acc__body">
+                <p>优先使用 5GHz 频段，并在两端都关闭传输加密 —— 加密会直接吃 CPU，在小文件多、机型老的情况下尤其明显。</p>
+                <p>Android 端接收速度偏慢是一个已知问题，与系统存储访问框架（SAF）的实现有关，是上游问题。</p>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>需要放行哪个端口？</summary>
+              <div class="acc__body">
+                <p>只需要放行 <code>TCP/UDP 59420</code> 的传入连接；传出方向保持「任意允许」即可。企业网络或第三方防火墙（如 Windows Defender 防火墙、安全软件）如果没有自动放行，手动添加一条规则就能解决。</p>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>YiDrop 会上传我的文件或数据吗？</summary>
+              <div class="acc__body">
+                <p>不会。传输完全发生在你的局域网内部，数据不经过任何中转服务器，应用本身也没有账号体系、广告和追踪 SDK。</p>
+                <p>需要说明的是，操作系统层面仍然可能收集应用的使用数据（崩溃报告、电量统计之类），这与 YiDrop 无关。</p>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>怎么把设置和数据随身携带？</summary>
+              <div class="acc__body">
+                <p>在可执行文件同目录放一个名为 <code>settings.json</code> 的文件（内容可以为空），YiDrop 就会把设置保存在这个文件里，而不是用户目录 —— 这就是便携模式。适合放在 U 盘里在不同电脑之间来回用。</p>
+              </div>
+            </details>
+            <details class="acc">
+              <summary>如何静默启动？</summary>
+              <div class="acc__body">
+                <p>启动时加上 <code>--hidden</code> 参数即可：程序只驻留在系统托盘，不弹主窗口，接到别人发来的文件时再跳出来确认。</p>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <aside class="split__aside">
+          <div class="surface-card surface-card--tint reveal">
+            <h3 class="t-title" style="margin-bottom:10px">还是搞不定？</h3>
+            <p class="t-body-sm" style="margin-bottom:18px">把设备型号、系统版本、路由器型号和现象描述清楚，开个 Issue，作者和社区都会来帮忙。</p>
+            <a class="btn btn--filled" style="background:var(--on-primary-container);color:var(--primary-container)" href="https://github.com/lingyicute/YiDrop/issues" target="_blank" rel="noopener">
+              <svg class="icon" aria-hidden="true"><use href="#ic-external"/></svg>提交 Issue
+            </a>
+          </div>
+          <div class="surface-card surface-card--flat reveal" style="margin-top:16px">
+            <h3 class="t-subtitle" style="margin-bottom:12px">参与进来</h3>
+            <ul style="display:flex;flex-direction:column;gap:12px">
+              <li><a class="footer__link" style="display:flex;align-items:center;gap:10px;color:inherit" href="https://github.com/lingyicute/YiDrop/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-sparkle"/></svg>阅读贡献指南</a></li>
+              <li><a style="display:flex;align-items:center;gap:10px;color:inherit" href="https://github.com/lingyicute/YiDrop/blob/main/README_EN.md" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-text"/></svg>English README</a></li>
+              <li><a style="display:flex;align-items:center;gap:10px;color:inherit" href="https://github.com/lingyicute/YiDrop/fork" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-code"/></svg>Fork 一份自己改</a></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 收尾行动号召 ===== -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <div class="cta__glow" aria-hidden="true"></div>
+        <span class="eyebrow" style="color:inherit">准备好了吗？</span>
+        <h2 class="t-headline">把文件丢过去，就这样。</h2>
+        <p class="t-body" style="margin:14px auto 26px;max-width:56ch;opacity:.9">下载 Android 或 Windows 版本，两台设备连上同一个 Wi-Fi，剩下的交给 YiDrop。</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center">
+          <a class="btn btn--filled btn--large" style="background:var(--on-primary-container);color:var(--primary-container)" href="#download"><svg class="icon" aria-hidden="true"><use href="#ic-download"/></svg>立即下载</a>
+          <a class="btn btn--outlined btn--large" style="border-color:color-mix(in srgb,currentColor 40%,transparent);color:inherit" href="https://github.com/lingyicute/YiDrop" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#ic-star"/></svg>给个 Star</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#top" style="margin-bottom:14px" aria-label="返回顶部">
+          <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#ic-mark"/></svg></span>
+          <span>YiDrop</span>
+        </a>
+        <p class="t-body-sm muted" style="max-width:44ch">开源、免费、跨平台的局域网文件分享工具，AirDrop 的开放式替代方案。无需互联网，无需账号，全程 HTTPS 加密。</p>
+        <div class="chip-set" style="margin-top:16px">
+          <span class="chip chip--filled">Apache-2.0</span>
+          <span class="chip">v1.17.4</span>
+          <span class="chip">Android · Windows · Linux · macOS</span>
+        </div>
+      </div>
+      <div>
+        <h4>项目</h4>
+        <ul>
+          <li><a href="https://github.com/lingyicute/YiDrop" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-code"/></svg>源码仓库</a></li>
+          <li><a href="https://github.com/lingyicute/YiDrop/releases" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-download"/></svg>版本发布</a></li>
+          <li><a href="https://github.com/lingyicute/YiDrop/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-heart"/></svg>贡献指南</a></li>
+          <li><a href="https://github.com/lingyicute/YiDrop/issues" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-info"/></svg>问题反馈</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>文档</h4>
+        <ul>
+          <li><a href="https://github.com/lingyicute/YiDrop/blob/main/README.md" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-text"/></svg>中文 README</a></li>
+          <li><a href="https://github.com/lingyicute/YiDrop/blob/main/README_EN.md" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-text"/></svg>English README</a></li>
+          <li><a href="https://github.com/lingyicute/YiDrop/blob/main/LICENSE" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-shield"/></svg>许可协议</a></li>
+          <li><a href="https://github.com/lingyicute/YiDrop/blob/main/CHANGELOG.md" target="_blank" rel="noopener"><svg class="icon" style="width:18px;height:18px" aria-hidden="true"><use href="#ic-layers"/></svg>更新日志</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 lingyicute · YiDrop 以 Apache-2.0 许可发布 · 本站为项目的介绍页面，源码可在仓库中查看与复用。</p>
+      <p>AirDrop 是 Apple Inc. 的商标，此处仅用于说明同类功能。</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== 浮动操作按钮 / 提示条 ===== -->
+<button class="fab" id="fab" aria-label="回到顶部"><svg class="icon" aria-hidden="true"><use href="#ic-arrow-up"/></svg>回到顶部</button>
+<div class="snackbar" id="snackbar" role="status" aria-live="polite">
+  <svg class="icon" aria-hidden="true"><use href="#ic-check-circle"/></svg><span id="snackbarText">已复制</span>
+</div>
+<script>
+/* ============================================================
+   YiDrop 介绍站点 · 原生 JavaScript（无框架、无依赖）
+   ============================================================ */
+(function () {
+  'use strict';
+
+  var root = document.documentElement;
+  var $  = function (s, c) { return (c || document).querySelector(s); };
+  var $$ = function (s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); };
+  var store = {
+    get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
+    set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------------- 配色与明暗模式 ---------------- */
+  var mqlDark = window.matchMedia('(prefers-color-scheme: dark)');
+  var THEME_KEY = 'yidrop:theme';
+  var PALETTE_KEY = 'yidrop:palette';
+
+  function isDark(theme) {
+    return theme === 'dark' || (theme === 'system' && mqlDark.matches);
+  }
+  function applyTheme(theme) {
+    root.setAttribute('data-theme', theme);
+    $$('[data-theme-value]').forEach(function (btn) {
+      btn.setAttribute('aria-checked', String(btn.dataset.themeValue === theme));
+    });
+    var meta = $('meta[name="theme-color"]');
+    if (meta) meta.setAttribute('content', isDark(theme) ? '#0b1414' : '#008080');
+  }
+  function applyPalette(key) {
+    root.setAttribute('data-palette', key);
+    /* 注意：必须限定在 #paletteMenu 内——<html> 标签本身也带有 data-palette，
+       用裸 [data-palette] 会误选中整个文档（此前点击页面任意位置都会把整页
+       文本含 JS 源码弹到 snackbar 里，就是截图中那条白色竖条）。 */
+    $$('#paletteMenu [data-palette]').forEach(function (btn) {
+      btn.setAttribute('aria-checked', String(btn.dataset.palette === key));
+    });
+  }
+
+  var savedTheme = store.get(THEME_KEY);
+  var savedPalette = store.get(PALETTE_KEY);
+  applyTheme(savedTheme || 'system');
+  applyPalette(savedPalette || 'teal');
+  mqlDark.addEventListener('change', function () {
+    if (root.getAttribute('data-theme') === 'system') applyTheme('system');
+  });
+
+  /* ---------------- 弹出菜单 ---------------- */
+  var menus = [
+    { btn: $('#paletteBtn'), menu: $('#paletteMenu') },
+    { btn: $('#themeBtn'),   menu: $('#themeMenu') }
+  ].filter(function (m) { return m.btn && m.menu; });
+
+  function closeMenus(except) {
+    menus.forEach(function (m) {
+      if (m.menu === except) return;
+      m.menu.dataset.open = 'false';
+      m.btn.setAttribute('aria-expanded', 'false');
+    });
+  }
+  menus.forEach(function (m) {
+    m.btn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = m.menu.dataset.open === 'true';
+      closeMenus(open ? null : m.menu);
+      m.menu.dataset.open = String(!open);
+      m.btn.setAttribute('aria-expanded', String(!open));
+    });
+    m.menu.addEventListener('click', function (e) { e.stopPropagation(); });
+  });
+  document.addEventListener('click', function () { closeMenus(null); closeMobileNav(); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') { closeMenus(null); closeMobileNav(); }
+  });
+
+  $$('[data-theme-value]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyTheme(btn.dataset.themeValue);
+      store.set(THEME_KEY, btn.dataset.themeValue);
+      closeMenus(null);
+    });
+  });
+  $$('#paletteMenu [data-palette]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      applyPalette(btn.dataset.palette);
+      store.set(PALETTE_KEY, btn.dataset.palette);
+      closeMenus(null);
+      showSnackbar('配色已切换为「' + btn.textContent.trim() + '」');
+    });
+  });
+
+  /* ---------------- 移动端导航 ---------------- */
+  var menuBtn = $('#menuBtn'), mobileNav = $('#navMobile');
+  function closeMobileNav() {
+    if (!mobileNav || mobileNav.dataset.open === 'false') return;
+    mobileNav.dataset.open = 'false';
+    if (menuBtn) menuBtn.setAttribute('aria-expanded', 'false');
+  }
+  if (menuBtn && mobileNav) {
+    menuBtn.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = mobileNav.dataset.open === 'true';
+      closeMenus(null);
+      mobileNav.dataset.open = String(!open);
+      menuBtn.setAttribute('aria-expanded', String(!open));
+    });
+    mobileNav.addEventListener('click', function (e) { e.stopPropagation(); });
+    $$('a', mobileNav).forEach(function (a) { a.addEventListener('click', closeMobileNav); });
+  }
+
+  /* ---------------- 顶栏吸顶阴影 ---------------- */
+  var appbar = $('#appbar');
+  function onScroll() {
+    if (appbar) appbar.classList.toggle('is-stuck', window.scrollY > 8);
+    var fab = $('#fab');
+    if (fab) fab.classList.toggle('is-visible', window.scrollY > 560);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* ---------------- 回到顶部 ---------------- */
+  var fab = $('#fab');
+  if (fab) {
+    fab.addEventListener('click', function () {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+    });
+  }
+
+  /* ---------------- 滚动进场动画 ---------------- */
+  var reveals = $$('.reveal');
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    reveals.forEach(function (el, i) {
+      el.style.transitionDelay = (i % 6) * 50 + 'ms';
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-in'); });
+  }
+
+  /* ---------------- 导航高亮（Scrollspy） ---------------- */
+  var navLinks = $$('#nav a, #navMobile a');
+  var sections = navLinks
+    .map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); })
+    .filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        navLinks.forEach(function (a) {
+          var active = a.getAttribute('href') === '#' + entry.target.id;
+          a.setAttribute('aria-current', active ? 'true' : 'false');
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ---------------- 平台标签页 ---------------- */
+  var tabs = $$('.tab');
+  function selectTab(tab) {
+    tabs.forEach(function (t) {
+      var panel = document.getElementById(t.getAttribute('aria-controls'));
+      var selected = t === tab;
+      t.setAttribute('aria-selected', String(selected));
+      t.tabIndex = selected ? 0 : -1;
+      if (panel) panel.hidden = !selected;
+    });
+  }
+  tabs.forEach(function (tab, i) {
+    tab.addEventListener('click', function () { selectTab(tab); });
+    tab.addEventListener('keydown', function (e) {
+      var next = null;
+      if (e.key === 'ArrowRight') next = tabs[(i + 1) % tabs.length];
+      if (e.key === 'ArrowLeft') next = tabs[(i - 1 + tabs.length) % tabs.length];
+      if (e.key === 'Home') next = tabs[0];
+      if (e.key === 'End') next = tabs[tabs.length - 1];
+      if (next) { e.preventDefault(); selectTab(next); next.focus(); }
+    });
+  });
+
+  /* ---------------- 折叠面板：同时只展开一个 ---------------- */
+  var accs = $$('details.acc');
+  accs.forEach(function (item) {
+    item.addEventListener('toggle', function () {
+      if (!item.open) return;
+      accs.forEach(function (other) { if (other !== item) other.open = false; });
+    });
+  });
+
+  /* ---------------- 触摸涟漪（Material 水波纹） ---------------- */
+  document.addEventListener('pointerdown', function (e) {
+    if (reduceMotion || e.button !== 0) return;
+    var host = e.target.closest('.btn, .icon-btn, .menu__item, .fab, .tab');
+    if (!host) return;
+    var rect = host.getBoundingClientRect();
+    var size = Math.max(rect.width, rect.height);
+    var ripple = document.createElement('span');
+    ripple.className = 'ripple';
+    ripple.style.width = ripple.style.height = size + 'px';
+    ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+    ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+    host.appendChild(ripple);
+    setTimeout(function () { ripple.remove(); }, 500);
+  });
+
+  /* ---------------- 提示条 ---------------- */
+  var snackbar = $('#snackbar'), snackbarText = $('#snackbarText'), snackTimer = null;
+  function showSnackbar(text) {
+    if (!snackbar) return;
+    snackbarText.textContent = text;
+    snackbar.classList.add('is-visible');
+    clearTimeout(snackTimer);
+    snackTimer = setTimeout(function () { snackbar.classList.remove('is-visible'); }, 2600);
+  }
+
+  /* ---------------- 复制代码块 ---------------- */
+  $$('[data-copy]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var target = document.querySelector(btn.dataset.copy);
+      if (!target) return;
+      var text = target.innerText;
+      var done = function () { showSnackbar('构建命令已复制到剪贴板'); };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, done);
+      } else {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); } catch (err) {}
+        ta.remove();
+        done();
+      }
+    });
+  });
+
+  /* ---------------- 图片加载失败时优雅降级 ---------------- */
+  $$('img').forEach(function (img) {
+    img.addEventListener('error', function () {
+      var fig = img.closest('figure');
+      if (fig) fig.style.display = 'none';
+    });
+  });
+})();
+</script>
+</body>
+</html>
