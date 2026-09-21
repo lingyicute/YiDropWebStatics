@@ -1126,14 +1126,37 @@ details.acc[open] summary::after{transform:rotate(135deg)}
 
 @media (max-width:560px){
   :root{--bar-h:60px}
-  .window__body{grid-template-columns:minmax(0,1fr)}
-  .mock-side{flex-direction:row;align-items:center;justify-content:space-between;border-right:0;border-bottom:1px solid var(--outline-variant);padding:10px}
-  .mock-side__brand{padding:0 8px}
-  .mock-side .mock-nav:not(.is-active){display:none}
+  /* 固定为宽屏比例，不再切换为顶栏 - 保持侧边栏布局 */
+  .window__body{grid-template-columns:132px minmax(0,1fr) !important;min-height:300px !important}
+  .mock-side{
+    flex-direction:column !important;
+    align-items:stretch !important;
+    justify-content:flex-start !important;
+    border-right:1px solid var(--outline-variant) !important;
+    border-bottom:0 !important;
+    padding:16px 12px !important;
+  }
+  .mock-side__brand{padding:4px 12px 14px !important}
+  .mock-side .mock-nav{display:flex !important}
+  .mock-side .mock-nav:not(.is-active){display:flex !important}
   .float-chip--a{left:0}
   .float-chip--b{right:0}
   .footer__grid{grid-template-columns:minmax(0,1fr)}
   .fab{height:52px;font-size:.875rem}
+}
+/* 窄视图下由 JS 控制等比缩放，CSS 只保证不限制宽度 */
+@media (max-width:620px){
+  .stage{
+    overflow:visible;
+    display:block;
+  }
+  .window{
+    max-width:none !important;
+  }
+  /* 极窄时装饰 chip 会造成横向溢出，直接隐藏保证只缩放窗口本身 */
+  .float-chip{
+    display:none !important;
+  }
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -2013,6 +2036,54 @@ details.acc[open] summary::after{transform:rotate(135deg)}
       if (fig) fig.style.display = 'none';
     });
   });
+
+  /* ---------------- Hero 窗口固定比例，只缩放不变形（JS 版，无下限） ---------------- */
+  (function(){
+    var stage = $('.stage');
+    var win = $('.stage .window');
+    if(!stage || !win) return;
+    var DESIGN_W = 520;
+    var DESIGN_H = 410; // 窗口+装饰的大致高度，用于撑开父容器
+    function doScale(){
+      var available = stage.clientWidth;
+      // stage.clientWidth 在某些情况下为 0 时用 window 宽度兜底
+      if(!available || available < 10){
+        var gutter = 32;
+        try{
+          var g = getComputedStyle(document.documentElement).getPropertyValue('--gutter');
+          // gutter 是 clamp，无法直接转 px，简单用 16px 兜底
+          gutter = 32;
+        }catch(e){}
+        available = window.innerWidth - gutter;
+        if(available < 200) available = window.innerWidth - 16;
+      }
+      var scale = available / DESIGN_W;
+      if(scale > 1) scale = 1;
+      if(scale < 0.15) scale = 0.15; // 防止缩到看不见，仍可无限缩
+      win.style.width = DESIGN_W + 'px';
+      win.style.maxWidth = 'none';
+      win.style.transformOrigin = 'top left';
+      win.style.transform = 'scale(' + scale + ')';
+      // 用 margin 实现居中，因为 transform 后的布局宽度仍是 DESIGN_W
+      var marginLeft = (available - DESIGN_W * scale) / 2;
+      // marginLeft 需要除以 scale，因为 transform 后的坐标系被缩放了
+      win.style.marginLeft = (marginLeft / scale) + 'px';
+      win.style.marginRight = '0';
+      // 撑开 stage 高度
+      stage.style.height = (DESIGN_H * scale + 56) + 'px';
+      stage.style.minHeight = '0';
+      stage.style.overflow = 'visible';
+    }
+    window.addEventListener('resize', doScale, {passive:true});
+    if('ResizeObserver' in window){
+      try{ new ResizeObserver(doScale).observe(stage); }catch(e){}
+    }
+    // 初始执行
+    doScale();
+    setTimeout(doScale, 80);
+    setTimeout(doScale, 400);
+    window.addEventListener('load', doScale);
+  })();
 })();
 </script>
 </body>
