@@ -709,6 +709,8 @@ section{scroll-margin-top:calc(var(--bar-h) + 24px)}
 .brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font-family:var(--md-ref-typeface-plain);font-weight:600;font-size:1.1875rem;letter-spacing:-.01em;grid-column:1;justify-self:start;white-space:nowrap}
 .brand__mark{width:34px;height:34px;color:var(--primary);flex:none}
 .brand__mark svg{width:100%;height:100%}
+.app-bar .brand__mark svg{animation:brand-spin 8s linear infinite}
+@keyframes brand-spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
 .brand__sub{font-size:.6875rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--on-surface-variant)}
 .nav{display:flex;gap:2px;margin:0;grid-column:2}
 .nav a{
@@ -1197,6 +1199,7 @@ details.acc[open] summary::after{transform:rotate(135deg)}
     <symbol id="ic-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3.3 14.7 9l6.2.8-4.6 4.3 1.2 6.2L12 17.4 6.5 20.3l1.2-6.2L3.1 9.8 9.3 9z"/></symbol>
     <symbol id="ic-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.3C7.2 3.3 3.3 6.9 3.3 11.3c0 4.4 3.9 8 8.7 8 1.2 0 2.1-.8 2.1-1.9 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.1 0-1 .8-1.8 1.9-1.8h1.4c2.3 0 4.3-1.9 4.3-4.2 0-3.5-3.5-5.8-8.7-5.8z"/><circle cx="7.8" cy="10" r="1.2" fill="currentColor" stroke="none"/><circle cx="11.4" cy="7.4" r="1.2" fill="currentColor" stroke="none"/><circle cx="15.6" cy="9.3" r="1.2" fill="currentColor" stroke="none"/></symbol>
     <symbol id="ic-brightness" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.8v2.1M12 19.1v2.1M2.8 12h2.1M19.1 12h2.1M5.5 5.5 7 7M17 17l1.5 1.5M18.5 5.5 17 7M7 17l-1.5 1.5"/></symbol>
+    <symbol id="ic-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 14.7A8.6 8.6 0 0 1 9.3 3.6a.7.7 0 0 0-.9-.9 9.9 9.9 0 1 0 12.9 12.9.7.7 0 0 0-.9-.9z"/></symbol>
     <symbol id="ic-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
     <symbol id="ic-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19.2V5.2m0 0-5.8 5.8M12 5.2l5.8 5.8"/></symbol>
     <symbol id="ic-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 12h14m0 0-5.6-5.6M18.8 12 13.2 17.6"/></symbol>
@@ -1230,7 +1233,7 @@ details.acc[open] summary::after{transform:rotate(135deg)}
   <div class="wrap app-bar__inner">
     <a class="brand" href="#top" aria-label="YiDrop 首页">
       <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 100 100"><use href="#ic-mark"/></svg></span>
-      <span>YiDrop<span class="brand__sub" style="display:block">局域网直传小工具</span></span>
+      <span>YiDrop</span>
     </a>
 
     <nav class="nav" id="nav" aria-label="页面导航">
@@ -1265,7 +1268,7 @@ details.acc[open] summary::after{transform:rotate(135deg)}
         <p class="menu__label">外观</p>
         <button class="menu__item" role="menuitemradio" data-theme-value="system" aria-checked="true"><svg class="icon" aria-hidden="true"><use href="#ic-sparkle"/></svg>跟随系统</button>
         <button class="menu__item" role="menuitemradio" data-theme-value="light" aria-checked="false"><svg class="icon" aria-hidden="true"><use href="#ic-brightness"/></svg>浅色</button>
-        <button class="menu__item" role="menuitemradio" data-theme-value="dark" aria-checked="false"><svg class="icon" aria-hidden="true"><use href="#ic-shield"/></svg>深色</button>
+        <button class="menu__item" role="menuitemradio" data-theme-value="dark" aria-checked="false"><svg class="icon" aria-hidden="true"><use href="#ic-moon"/></svg>深色</button>
       </div>
 
       <nav class="nav nav--mobile" id="navMobile" data-open="false" aria-label="移动端导航">
